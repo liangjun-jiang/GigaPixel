@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D657204F13C617E80002AA67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657204E13C617E80002AA67 /* UIKit.framework */; };
+		D657205113C617E80002AA67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657205013C617E80002AA67 /* Foundation.framework */; };
+		D657205313C617E80002AA67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657205213C617E80002AA67 /* CoreGraphics.framework */; };
+		D657205913C617E80002AA67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D657205713C617E80002AA67 /* InfoPlist.strings */; };
+		D657205C13C617E80002AA67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D657205B13C617E80002AA67 /* main.m */; };
+		D657205F13C617E80002AA67 /* Pathology_interfaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D657205E13C617E80002AA67 /* Pathology_interfaceAppDelegate.m */; };
+		D657206213C617E80002AA67 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D657206013C617E80002AA67 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D657204A13C617E80002AA67 /* Pathology-interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pathology-interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D657204E13C617E80002AA67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D657205013C617E80002AA67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D657205213C617E80002AA67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D657205613C617E80002AA67 /* Pathology-interface-Info.plist */ = {isa = PBXFileReference; path = "Pathology-interface-Info.plist"; sourceTree = "<group>"; };
+		D657205813C617E80002AA67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D657205A13C617E80002AA67 /* Pathology-interface-Prefix.pch */ = {isa = PBXFileReference; path = "Pathology-interface-Prefix.pch"; sourceTree = "<group>"; };
+		D657205B13C617E80002AA67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D657205D13C617E80002AA67 /* Pathology_interfaceAppDelegate.h */ = {isa = PBXFileReference; path = Pathology_interfaceAppDelegate.h; sourceTree = "<group>"; };
+		D657205E13C617E80002AA67 /* Pathology_interfaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pathology_interfaceAppDelegate.m; sourceTree = "<group>"; };
+		D657206113C617E80002AA67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D657204713C617E80002AA67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D657204F13C617E80002AA67 /* UIKit.framework in Frameworks */,
+				D657205113C617E80002AA67 /* Foundation.framework in Frameworks */,
+				D657205313C617E80002AA67 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D657203F13C617E80002AA67 = {
+			isa = PBXGroup;
+			children = (
+				D657205413C617E80002AA67 /* Pathology-interface */,
+				D657204D13C617E80002AA67 /* Frameworks */,
+				D657204B13C617E80002AA67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D657204B13C617E80002AA67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D657204A13C617E80002AA67 /* Pathology-interface.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D657204D13C617E80002AA67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D657204E13C617E80002AA67 /* UIKit.framework */,
+				D657205013C617E80002AA67 /* Foundation.framework */,
+				D657205213C617E80002AA67 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D657205413C617E80002AA67 /* Pathology-interface */ = {
+			isa = PBXGroup;
+			children = (
+				D657205D13C617E80002AA67 /* Pathology_interfaceAppDelegate.h */,
+				D657205E13C617E80002AA67 /* Pathology_interfaceAppDelegate.m */,
+				D657206013C617E80002AA67 /* MainWindow.xib */,
+				D657205513C617E80002AA67 /* Supporting Files */,
+			);
+			path = "Pathology-interface";
+			sourceTree = "<group>";
+		};
+		D657205513C617E80002AA67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D657205613C617E80002AA67 /* Pathology-interface-Info.plist */,
+				D657205713C617E80002AA67 /* InfoPlist.strings */,
+				D657205A13C617E80002AA67 /* Pathology-interface-Prefix.pch */,
+				D657205B13C617E80002AA67 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D657204913C617E80002AA67 /* Pathology-interface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D657206513C617E80002AA67 /* Build configuration list for PBXNativeTarget "Pathology-interface" */;
+			buildPhases = (
+				D657204613C617E80002AA67 /* Sources */,
+				D657204713C617E80002AA67 /* Frameworks */,
+				D657204813C617E80002AA67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pathology-interface";
+			productName = "Pathology-interface";
+			productReference = D657204A13C617E80002AA67 /* Pathology-interface.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D657204113C617E80002AA67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Harvard University Extension School";
+			};
+			buildConfigurationList = D657204413C617E80002AA67 /* Build configuration list for PBXProject "Pathology-interface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D657203F13C617E80002AA67;
+			productRefGroup = D657204B13C617E80002AA67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D657204913C617E80002AA67 /* Pathology-interface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D657204813C617E80002AA67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D657205913C617E80002AA67 /* InfoPlist.strings in Resources */,
+				D657206213C617E80002AA67 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D657204613C617E80002AA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D657205C13C617E80002AA67 /* main.m in Sources */,
+				D657205F13C617E80002AA67 /* Pathology_interfaceAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D657205713C617E80002AA67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D657205813C617E80002AA67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D657206013C617E80002AA67 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D657206113C617E80002AA67 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D657206313C617E80002AA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D657206413C617E80002AA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		D657206613C617E80002AA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pathology-interface/Pathology-interface-Prefix.pch";
+				INFOPLIST_FILE = "Pathology-interface/Pathology-interface-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D657206713C617E80002AA67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pathology-interface/Pathology-interface-Prefix.pch";
+				INFOPLIST_FILE = "Pathology-interface/Pathology-interface-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D657204413C617E80002AA67 /* Build configuration list for PBXProject "Pathology-interface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D657206313C617E80002AA67 /* Debug */,
+				D657206413C617E80002AA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D657206513C617E80002AA67 /* Build configuration list for PBXNativeTarget "Pathology-interface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D657206613C617E80002AA67 /* Debug */,
+				D657206713C617E80002AA67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D657204113C617E80002AA67 /* Project object */;
+}
