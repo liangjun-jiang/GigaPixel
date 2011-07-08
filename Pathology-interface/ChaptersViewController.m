@@ -15,7 +15,7 @@
 
 
 @implementation ChaptersViewController
-@synthesize navBar, section, gridView, chapters, networkQueue, detailButton;
+@synthesize navBar, gridView, chapters, networkQueue, detailButton, sectionName;
 
 - (void)dealloc
 {
@@ -25,9 +25,6 @@
     
     [gridView release];
     gridView = nil;
-    
-    [section release];
-    section = nil;
     
     [chapters release];
     chapters = nil;
@@ -55,8 +52,8 @@
     [super viewDidLoad];
     gridView.leftContentInset = 60.0f;
     gridView.rightContentInset = 60.0f;
-    navBar.topItem.title = self.title;
-    //navBar.topItem.rightBarButtonItem.title = [NSString stringWithFormat:@"Section: %@", section.number];
+    navBar.topItem.title = sectionName;
+    //navBar.topItem.rightBarButtonItem.title = [NSString stringWithFormat:@"Section: %@", section.title];
     
 }
 
@@ -104,8 +101,7 @@
 
 -(NSUInteger)numberOfItemsInGridView:(AQGridView *)gridView
 {
-    //return [chapters count];
-    return 5;
+    return [chapters count];
 }
 
 -(AQGridViewCell *)gridView: (AQGridView *)inGridView cellForItemAtIndex:(NSUInteger)index
@@ -116,6 +112,16 @@
         cell.reuseIdentifier = @"cell";
     }
     
+    cell.backgroundColor = [UIColor clearColor];
+	cell.selectionStyle = AQGridViewCellSelectionStyleGlow;
+    
+    
+    NSString *imageName = [[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]] objectForKey:@"image"];
+    
+	cell.thumbnailImageView.image = [UIImage imageNamed:imageName]; 
+    
+    cell.chapterNameLabel.text = [[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]] objectForKey:@"title"];
+    
     return cell;
 }
 
@@ -123,9 +129,7 @@
 -(void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
 {
     PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    
-    Chapter *chapter = [[chapters allKeys] objectAtIndex:index];
-    vc.chapter = chapter;
+    vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
     
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentModalViewController:vc animated:YES];

@@ -15,7 +15,7 @@
 
 @interface SectionsViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource, UIActionSheetDelegate>{
     AQGridView *gridView;
-    NSMutableDictionary *sectionArray;
+    NSMutableDictionary *sections;
     
     UIBarButtonItem *infoButton;
     UIBarButtonItem *pathologyButton; //TODO
@@ -24,7 +24,7 @@
     
 }
 
-@property (nonatomic, retain) NSMutableDictionary *sectionArray;
+@property (nonatomic, retain) NSMutableDictionary *sections;
 @property (nonatomic, retain) IBOutlet AQGridView *gridView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *infoButton;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *pathologyButton; //TODO

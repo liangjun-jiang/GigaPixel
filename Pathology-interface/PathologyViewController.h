@@ -29,11 +29,12 @@
     UIButton *createProjectButton; //TODO: 
     UITextField *noteField;
     
-    Chapter *chapter;
+    NSMutableDictionary *chapter;
+    
     
 }
 
-@property (nonatomic, retain) Chapter *chapter;
+@property (nonatomic, retain) NSMutableDictionary *chapter;
 @property (nonatomic, retain) IBOutlet ButtonGroup *keywordButtonGroup;
 @property (nonatomic, retain) IBOutlet ButtonGroup *otherInfoButtonGroup;
 @property (nonatomic, retain) IBOutlet UILabel *helpfulLabel;

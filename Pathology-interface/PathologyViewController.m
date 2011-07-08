@@ -64,8 +64,8 @@
 
 -(void)buttonTapped:(ButtonGroupButton *)inButton
 {
-    ChaptersViewController *vc = (ChaptersViewController *)self.parentViewController;
-    vc.section = inButton.section;
+    //ChaptersViewController *vc = (ChaptersViewController *)self.parentViewController;
+    //vc.section = inButton.section;
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -74,7 +74,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title = chapter.title;
+    //NSLog(@"chapter image: %@", [chapter objectForKey:@"image"]);
     
 }
 

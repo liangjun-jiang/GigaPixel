@@ -15,9 +15,10 @@
 #import "WebViewController.h"
 //#import "UserId.h"
 #import "AQGridView.h"
+#import "Chapter.h"
 
 @implementation SectionsViewController
-@synthesize sectionArray;
+@synthesize sections;
 @synthesize gridView;
 @synthesize infoButton;
 @synthesize pathologyButton;
@@ -27,21 +28,20 @@
 - (void)viewWillAppear:(BOOL)animated;
 {
 	[super viewWillAppear:animated];
-  	[self.gridView deselectItemAtIndex: [self.gridView indexOfSelectedItem] animated: animated];
+  	[gridView deselectItemAtIndex: [self.gridView indexOfSelectedItem] animated: animated];
 	[gridView reloadData];
     
 }
 
 - (void)viewDidLoad;
 {
-    self.sectionArray = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Pathology" ofType:@"plist"]];
-
+    sections = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Pathology" ofType:@"plist"]];
 }
 
 
 - (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView;
 {
-	return [self.sectionArray count];
+	return [self.sections count];
 }
 
 
@@ -59,8 +59,8 @@
 	cell.backgroundColor = [UIColor clearColor];
 	cell.selectionStyle = AQGridViewCellSelectionStyleGlow;
 	
-	cell.numberLabel.text = [[sectionArray allKeys] objectAtIndex:index]; 
-    //cell.titleLabel.text = [[sectionArray objectAtIndex:index] title];
+	cell.numberLabel.text = [[sections allKeys] objectAtIndex:index]; 
+    //cell.titleLabel.text = [[sections objectForKey:[[sections allKeys] objectAtIndex:index]] objectForKey:@"title"];
 	
 	return cell;
 }
@@ -68,8 +68,8 @@
 -(void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
 {
     ChaptersViewController *vc = [[[ChaptersViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    Section *section = [sectionArray objectForKey:[[sectionArray allKeys] objectAtIndex:index]];
-    vc.section = section;
+    //vc.sectionName = [[sections objectForKey:[[sections allKeys] objectAtIndex:index]] objectForKey:@"title"];
+    vc.chapters = [sections objectForKey:[[sections allKeys] objectAtIndex:index]];
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentModalViewController:vc animated:YES];
 }
@@ -85,8 +85,8 @@
 {
     [gridView release];
     gridView = nil;
-    [sectionArray release];
-    sectionArray = nil;
+    [sections release];
+    sections = nil;
     [super dealloc];
 }
 

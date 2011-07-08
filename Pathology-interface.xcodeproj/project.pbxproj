@@ -72,6 +72,10 @@
 		D67D3CBB13C69EF900ED0A59 /* InstantWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = D67D3CBA13C69EF900ED0A59 /* InstantWatch.png */; };
 		D67D3CBD13C69F2000ED0A59 /* ExampleImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D67D3CBC13C69F2000ED0A59 /* ExampleImage.jpg */; };
 		D6F7E47413C76DE000A4C875 /* BoxOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47313C76DE000A4C875 /* BoxOverlay.png */; };
+		D6F7E48313C7BA0200A4C875 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47F13C7BA0100A4C875 /* b.jpg */; };
+		D6F7E48413C7BA0200A4C875 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E48013C7BA0200A4C875 /* c.jpg */; };
+		D6F7E48513C7BA0200A4C875 /* d.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E48113C7BA0200A4C875 /* d.jpg */; };
+		D6F7E48713C7BA4000A4C875 /* e.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E48613C7BA4000A4C875 /* e.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +194,10 @@
 		D67D3CBA13C69EF900ED0A59 /* InstantWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstantWatch.png; sourceTree = "<group>"; };
 		D67D3CBC13C69F2000ED0A59 /* ExampleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ExampleImage.jpg; sourceTree = "<group>"; };
 		D6F7E47313C76DE000A4C875 /* BoxOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxOverlay.png; sourceTree = "<group>"; };
+		D6F7E47F13C7BA0100A4C875 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
+		D6F7E48013C7BA0200A4C875 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
+		D6F7E48113C7BA0200A4C875 /* d.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d.jpg; sourceTree = "<group>"; };
+		D6F7E48613C7BA4000A4C875 /* e.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = e.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +268,10 @@
 		D657205513C617E80002AA67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6F7E48613C7BA4000A4C875 /* e.jpg */,
+				D6F7E47F13C7BA0100A4C875 /* b.jpg */,
+				D6F7E48013C7BA0200A4C875 /* c.jpg */,
+				D6F7E48113C7BA0200A4C875 /* d.jpg */,
 				D6F7E47313C76DE000A4C875 /* BoxOverlay.png */,
 				D67D3CBC13C69F2000ED0A59 /* ExampleImage.jpg */,
 				D67D3CBA13C69EF900ED0A59 /* InstantWatch.png */,
@@ -479,6 +491,10 @@
 				D67D3CBB13C69EF900ED0A59 /* InstantWatch.png in Resources */,
 				D67D3CBD13C69F2000ED0A59 /* ExampleImage.jpg in Resources */,
 				D6F7E47413C76DE000A4C875 /* BoxOverlay.png in Resources */,
+				D6F7E48313C7BA0200A4C875 /* b.jpg in Resources */,
+				D6F7E48413C7BA0200A4C875 /* c.jpg in Resources */,
+				D6F7E48513C7BA0200A4C875 /* d.jpg in Resources */,
+				D6F7E48713C7BA4000A4C875 /* e.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

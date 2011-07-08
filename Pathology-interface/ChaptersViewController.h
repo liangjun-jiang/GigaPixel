@@ -20,10 +20,11 @@
     ASIHTTPRequest *getChaptersRequest;
     ASINetworkQueue *networkQueue;
     
-    Section *section;
+    NSString *sectionName;
     
     UINavigationBar *navBar;
     UIBarButtonItem *detailButton;
+    
     NSMutableDictionary *chapters;
     
     NSInteger page;
@@ -31,7 +32,7 @@
 
 @property (retain) IBOutlet UINavigationBar *navBar;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *detailButton;
-@property (retain) Section *section;
+@property (nonatomic, retain) NSString *sectionName;
 @property (copy) NSMutableDictionary *chapters;
 @property (retain) AQGridView *gridView;
 @property (retain) ASINetworkQueue *networkQueue;
