@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class SectionsViewController;
+
 @interface Pathology_interfaceAppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window;
+    SectionsViewController *viewController;
 
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet SectionsViewController *viewController;
 
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1</key>
+	<dict>
+		<key>1</key>
+		<dict>
+			<key>synopsis</key>
+			<string>this is a test description of synoposis</string>
+			<key>image</key>
+			<string>a.jpg</string>
+			<key>title</key>
+			<string>abcded</string>
+		</dict>
+		<key>2</key>
+		<dict/>
+	</dict>
+	<key>2</key>
+	<dict>
+		<key>3</key>
+		<dict>
+			<key>title</key>
+			<string>adbdeed</string>
+			<key>image</key>
+			<string>b.jpg</string>
+			<key>synoposis</key>
+			<string>this is another synoposis!</string>
+		</dict>
+		<key>4</key>
+		<dict/>
+	</dict>
+	<key>3</key>
+	<dict>
+		<key>5</key>
+		<dict/>
+		<key>6</key>
+		<dict/>
+	</dict>
+</dict>
+</plist>
