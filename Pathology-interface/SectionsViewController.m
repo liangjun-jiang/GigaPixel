@@ -60,8 +60,7 @@
 	cell.selectionStyle = AQGridViewCellSelectionStyleGlow;
 	
 	cell.numberLabel.text = [[sections allKeys] objectAtIndex:index]; 
-    //cell.titleLabel.text = [[sections objectForKey:[[sections allKeys] objectAtIndex:index]] objectForKey:@"title"];
-	
+    
 	return cell;
 }
 

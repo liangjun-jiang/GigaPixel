@@ -11,11 +11,12 @@
 
 @implementation ButtonGroupButton
 @synthesize section;
+@synthesize keyword;
 
 -(id)initWithFrame:(CGRect)frame {
     if ((self=[super initWithFrame:frame])) {
-        UIImage *image = [[UIImage imageNamed:@""] stretchableImageWithLeftCapWidth:20 topCapHeight:0];
-        self.titleLabel.font = [UIFont boldSystemFontOfSize:14];
+        UIImage *image = [[UIImage imageNamed:@"ActorButtonBG.png"] stretchableImageWithLeftCapWidth:20 topCapHeight:0];
+        self.titleLabel.font = [UIFont boldSystemFontOfSize:18];
         [self setTitleColor:[UIColor colorWithWhite:0.3 alpha:1.0] forState:UIControlStateNormal];
 		[self setBackgroundImage:image forState:UIControlStateNormal];
 		[self setImage:[UIImage imageNamed:@"Chevron.png"] forState:UIControlStateNormal];
@@ -57,6 +58,9 @@
 {
     [section release];
     section = nil;
+    
+    [keyword release];
+    keyword = nil;
     
     [super dealloc];
 }

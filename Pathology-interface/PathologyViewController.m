@@ -28,6 +28,13 @@
 @synthesize createProjectButton; //TODO: 
 @synthesize noteField;
 @synthesize chapter;
+//@synthesize keywords;
+
+
+-(IBAction)back
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (void)dealloc
 {
@@ -45,6 +52,9 @@
    
     [anotherLabel release];
     [helpfulLabel release];
+    //[keywords release];
+    //keywords = nil;
+    
     [super dealloc];
 }
 
@@ -53,20 +63,55 @@
     [super didReceiveMemoryWarning];
 }
 
--(IBAction)back;
-{
-    [self dismissModalViewControllerAnimated:YES];
-}
--(IBAction)doSomething;
+
+
+-(IBAction)doSomething
 {
     
 }
 
+-(NSMutableArray *)parseKeywords:(NSString *)keywordsString
+{
+    NSCharacterSet *semicolonSet;
+    NSScanner *theScanner;
+    NSString *keyword;
+    
+    semicolonSet = [NSCharacterSet characterSetWithCharactersInString:@","];
+    theScanner = [NSScanner scannerWithString:keywordsString];
+    NSMutableArray *keywordArray = [NSMutableArray array];
+    while ([theScanner isAtEnd] == NO)
+    {
+        if ([theScanner scanUpToCharactersFromSet:semicolonSet
+                                       intoString:&keyword] &&
+            [theScanner scanString:@"," intoString:NULL])
+        {
+            [keywordArray addObject:keyword];
+        }
+    }
+    return keywordArray;    
+}
+
 -(void)buttonTapped:(ButtonGroupButton *)inButton
 {
+    //TODO: Have not thought about how to handle keyword yet.
+    
     //ChaptersViewController *vc = (ChaptersViewController *)self.parentViewController;
     //vc.section = inButton.section;
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)displayKeywords:(NSMutableArray *)keywordsArray
+{
+    [keywordButtonGroup removeAllSubviews];
+    for (NSString *str in keywordsArray){
+        ButtonGroupButton *button = [ButtonGroupButton buttonWithType:UIButtonTypeCustom];
+        [button setTitle:str forState:UIControlStateNormal];
+        [keywordButtonGroup addSubview:button];
+        
+        [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        button.keyword = str;
+    }
+    
 }
 
 #pragma mark - View lifecycle
@@ -74,8 +119,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //NSLog(@"chapter image: %@", [chapter objectForKey:@"image"]);
+    self.navBar.topItem.title = [chapter objectForKey:@"title"];
     
+    largeImage.image = [UIImage imageNamed:[chapter objectForKey:@"image"]];
+    pathologyNameLabel.text = [chapter objectForKey:@"title"];
+    synoposisView.text = [chapter objectForKey:@"synoposis"];
+    
+    //temporary here
+    NSString *keywordStr = [NSString stringWithFormat:@"%@", [chapter objectForKey:@"keywords"]];
+   [self displayKeywords:[self parseKeywords:keywordStr]];
 }
 
 - (void)viewDidUnload
@@ -83,6 +135,8 @@
     [super viewDidUnload];
    
 }
+
+
 
 //TODO: able to handle portrait
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

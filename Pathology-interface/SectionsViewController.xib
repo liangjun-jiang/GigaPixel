@@ -13,8 +13,8 @@
 		<object class="NSArray" key="IBDocument.IntegratedClassDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<string>IBProxyObject</string>
-			<string>IBUIBarButtonItem</string>
 			<string>IBUIImageView</string>
+			<string>IBUIBarButtonItem</string>
 			<string>IBUINavigationBar</string>
 			<string>IBUINavigationItem</string>
 			<string>IBUIScrollView</string>
@@ -60,7 +60,7 @@
 								<reference key="IBUINavigationBar" ref="647549464"/>
 								<string key="IBUITitle">Pathology</string>
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="184031430">
-									<string key="IBUITitle">Web</string>
+									<string key="IBUITitle">External Dispaly</string>
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									<int key="IBUIStyle">1</int>
 									<reference key="IBUINavigationItem" ref="442638794"/>
@@ -243,16 +243,6 @@
 						<reference key="parent" ref="647549464"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">23</int>
-						<reference key="object" ref="184695814"/>
-						<reference key="parent" ref="442638794"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">24</int>
-						<reference key="object" ref="184031430"/>
-						<reference key="parent" ref="442638794"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">38</int>
 						<reference key="object" ref="476283726"/>
 						<reference key="parent" ref="766721923"/>
@@ -261,6 +251,16 @@
 						<int key="objectID">39</int>
 						<reference key="object" ref="426312773"/>
 						<reference key="parent" ref="766721923"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">24</int>
+						<reference key="object" ref="184031430"/>
+						<reference key="parent" ref="442638794"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">23</int>
+						<reference key="object" ref="184695814"/>
+						<reference key="parent" ref="442638794"/>
 					</object>
 				</object>
 			</object>

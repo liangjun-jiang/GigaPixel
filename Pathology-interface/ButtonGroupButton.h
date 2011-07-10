@@ -11,9 +11,11 @@
 
 @interface ButtonGroupButton : UIButton {
     Section *section;
+    NSString *keyword;
     
 }
 
 @property (nonatomic, retain) Section *section;
+@property (nonatomic, retain) NSString *keyword;
 
 @end

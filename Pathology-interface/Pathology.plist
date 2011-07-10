@@ -2,10 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>1</key>
+	<key>Section 1: History</key>
 	<dict>
 		<key>1</key>
 		<dict>
+			<key>keywords</key>
+			<string>computer, science, history, biology, math, physics</string>
 			<key>image</key>
 			<string>c.jpg</string>
 			<key>synoposis</key>
@@ -15,6 +17,8 @@
 		</dict>
 		<key>2</key>
 		<dict>
+			<key>keywords</key>
+			<string>natural, history, social</string>
 			<key>image</key>
 			<string>c.jpg</string>
 			<key>synoposis</key>
@@ -23,10 +27,12 @@
 			<string>what&apos;s the title</string>
 		</dict>
 	</dict>
-	<key>2</key>
+	<key>Section 2: Biology</key>
 	<dict>
 		<key>3</key>
 		<dict>
+			<key>keywords</key>
+			<string>natural, animal, birds, dogs</string>
 			<key>image</key>
 			<string>b.jpg</string>
 			<key>synoposis</key>
@@ -36,6 +42,8 @@
 		</dict>
 		<key>4</key>
 		<dict>
+			<key>keywords</key>
+			<string>Katy Perry, Maroon 5, Linkin Park, Taylor Swift</string>
 			<key>image</key>
 			<string>e.jpg</string>
 			<key>synoposis</key>
@@ -44,25 +52,25 @@
 			<string>adddbd</string>
 		</dict>
 	</dict>
-	<key>3</key>
+	<key>Section 3: Computer Science</key>
 	<dict>
 		<key>5</key>
 		<dict>
-			<key>title</key>
-			<string>dont&apos;knwoa tad. </string>
-			<key>synoposis</key>
-			<string>ok. what&apos;t eht allda&apos; kajdf d</string>
 			<key>image</key>
 			<string>b.jpg</string>
+			<key>synoposis</key>
+			<string>ok. what&apos;t eht allda&apos; kajdf d</string>
+			<key>title</key>
+			<string>dont&apos;knwoa tad. </string>
 		</dict>
 		<key>6</key>
 		<dict>
-			<key>title</key>
-			<string>anoterh titlele</string>
 			<key>image</key>
 			<string>c.jpg</string>
 			<key>synoposis</key>
 			<string>oppss, whalt.e.a..dd </string>
+			<key>title</key>
+			<string>anoterh titlele</string>
 		</dict>
 	</dict>
 </dict>

@@ -15,26 +15,28 @@
     ButtonGroup *keywordButtonGroup;
     ButtonGroup *otherInfoButtonGroup;
     
-    UILabel *helpfulLabel;
     UILabel *pathologyNameLabel;  
-    UILabel *anotherLabel; //TODO: some meaningful name
     
     UITextView *synoposisView; 
-    
     UIImageView *largeImage;
     
     UINavigationBar *navBar;
     UIBarButtonItem *gigaPixelButton;
+    NSMutableDictionary *chapter;
+    //NSArray *keywords;
     
+    
+    UILabel *anotherLabel; //TODO: some meaningful name
+    UILabel *helpfulLabel;
     UIButton *createProjectButton; //TODO: 
     UITextField *noteField;
     
-    NSMutableDictionary *chapter;
     
     
 }
 
 @property (nonatomic, retain) NSMutableDictionary *chapter;
+//@property (copy) NSArray *keywords;
 @property (nonatomic, retain) IBOutlet ButtonGroup *keywordButtonGroup;
 @property (nonatomic, retain) IBOutlet ButtonGroup *otherInfoButtonGroup;
 @property (nonatomic, retain) IBOutlet UILabel *helpfulLabel;
