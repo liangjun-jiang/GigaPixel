@@ -21,7 +21,7 @@
 @synthesize sections;
 @synthesize gridView;
 @synthesize infoButton;
-@synthesize pathologyButton;
+@synthesize externalDisplayButton;
 //@synthesize user;
 
 
@@ -86,6 +86,8 @@
     gridView = nil;
     [sections release];
     sections = nil;
+    [infoButton release];
+    [externalDisplayButton release];
     [super dealloc];
 }
 
@@ -94,7 +96,7 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)pathology
+- (IBAction)externalDisplay
 {
     WebViewController *web = [[WebViewController alloc] initWithUrlString:@"http://neuro.med.harvard.edu/"];
     web.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
@@ -142,6 +144,7 @@
 {
     [super viewDidUnload];
     self.gridView = nil;
+    sections = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

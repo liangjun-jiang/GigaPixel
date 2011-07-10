@@ -18,7 +18,7 @@
     NSMutableDictionary *sections;
     
     UIBarButtonItem *infoButton;
-    UIBarButtonItem *pathologyButton; //TODO
+    UIBarButtonItem *externalDisplayButton; 
     
    // UserId *user;
     
@@ -27,10 +27,10 @@
 @property (nonatomic, retain) NSMutableDictionary *sections;
 @property (nonatomic, retain) IBOutlet AQGridView *gridView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *infoButton;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *pathologyButton; //TODO
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *externalDisplayButton; 
 //@property (retain) UserId *user;
 
-- (IBAction)pathology; //TODO
+- (IBAction)externalDisplay; //TODO
 - (IBAction)info;
 
 
