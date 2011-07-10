@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60EF9AB13C9F806002627AA /* SessionList.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98113C9F806002627AA /* SessionList.m */; };
+		D60EF9AC13C9F806002627AA /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98313C9F806002627AA /* Stack.m */; };
+		D60EF9AD13C9F806002627AA /* NetCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98513C9F806002627AA /* NetCacheManager.m */; };
+		D60EF9AE13C9F806002627AA /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98713C9F806002627AA /* CacheManager.m */; };
+		D60EF9AF13C9F806002627AA /* GLLock.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98913C9F806002627AA /* GLLock.m */; };
+		D60EF9B013C9F806002627AA /* GigaPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98A13C9F806002627AA /* GigaPixel.m */; };
+		D60EF9B113C9F806002627AA /* PyramidLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF98E13C9F806002627AA /* PyramidLevel.m */; };
+		D60EF9B213C9F806002627AA /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99013C9F806002627AA /* Tile.m */; };
+		D60EF9B313C9F806002627AA /* TileLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99213C9F806002627AA /* TileLoader.m */; };
+		D60EF9B413C9F806002627AA /* TileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99413C9F806002627AA /* TileManager.m */; };
+		D60EF9B513C9F806002627AA /* sourceUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99613C9F806002627AA /* sourceUtil.c */; };
+		D60EF9B613C9F806002627AA /* PrefetchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99813C9F806002627AA /* PrefetchManager.m */; };
+		D60EF9B713C9F806002627AA /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99A13C9F806002627AA /* ES1Renderer.m */; };
+		D60EF9B813C9F806002627AA /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99D13C9F806002627AA /* EAGLView.m */; };
+		D60EF9B913C9F806002627AA /* Texture2D.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF99F13C9F806002627AA /* Texture2D.m */; };
+		D60EF9BA13C9F806002627AA /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A113C9F806002627AA /* Message.m */; };
+		D60EF9BB13C9F806002627AA /* PollMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A313C9F806002627AA /* PollMsg.m */; };
+		D60EF9BC13C9F806002627AA /* esShader.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A413C9F806002627AA /* esShader.c */; };
+		D60EF9BD13C9F806002627AA /* esShapes.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A513C9F806002627AA /* esShapes.c */; };
+		D60EF9BE13C9F806002627AA /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A613C9F806002627AA /* esTransform.c */; };
+		D60EF9BF13C9F806002627AA /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A713C9F806002627AA /* esUtil.c */; };
+		D60EF9C013C9F806002627AA /* URLCacheConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9AA13C9F806002627AA /* URLCacheConnection.m */; };
+		D60EF9D013C9F82E002627AA /* Shader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9C313C9F82E002627AA /* Shader.vsh */; };
+		D60EF9D113C9F82E002627AA /* Shader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9C413C9F82E002627AA /* Shader.fsh */; };
+		D60EF9D213C9F82E002627AA /* ShaderCom.fsh in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9C513C9F82E002627AA /* ShaderCom.fsh */; };
+		D60EF9D313C9F82E002627AA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C613C9F82E002627AA /* Icon.png */; };
+		D60EF9D413C9F82E002627AA /* header3.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C713C9F82E002627AA /* header3.txt */; };
+		D60EF9D513C9F82E002627AA /* header4.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C813C9F82E002627AA /* header4.txt */; };
+		D60EF9D613C9F82E002627AA /* header5.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C913C9F82E002627AA /* header5.txt */; };
+		D60EF9D713C9F82E002627AA /* header6.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CA13C9F82E002627AA /* header6.txt */; };
+		D60EF9D813C9F82E002627AA /* header7.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CB13C9F82E002627AA /* header7.txt */; };
+		D60EF9D913C9F82E002627AA /* header8.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CC13C9F82E002627AA /* header8.txt */; };
+		D60EF9DA13C9F82E002627AA /* header9.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CD13C9F82E002627AA /* header9.txt */; };
+		D60EF9DB13C9F82E002627AA /* header10.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CE13C9F82E002627AA /* header10.txt */; };
+		D60EF9DC13C9F82E002627AA /* checkers.png in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CF13C9F82E002627AA /* checkers.png */; };
+		D60EF9DF13C9F887002627AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60EF9DE13C9F887002627AA /* OpenGLES.framework */; };
 		D657204F13C617E80002AA67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657204E13C617E80002AA67 /* UIKit.framework */; };
 		D657205113C617E80002AA67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657205013C617E80002AA67 /* Foundation.framework */; };
 		D657205313C617E80002AA67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657205213C617E80002AA67 /* CoreGraphics.framework */; };
@@ -79,6 +115,64 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60EF98013C9F806002627AA /* SessionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionList.h; sourceTree = "<group>"; };
+		D60EF98113C9F806002627AA /* SessionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionList.m; sourceTree = "<group>"; };
+		D60EF98213C9F806002627AA /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		D60EF98313C9F806002627AA /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		D60EF98413C9F806002627AA /* NetCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetCacheManager.h; sourceTree = "<group>"; };
+		D60EF98513C9F806002627AA /* NetCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetCacheManager.m; sourceTree = "<group>"; };
+		D60EF98613C9F806002627AA /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		D60EF98713C9F806002627AA /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		D60EF98813C9F806002627AA /* GLLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLLock.h; sourceTree = "<group>"; };
+		D60EF98913C9F806002627AA /* GLLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLLock.m; sourceTree = "<group>"; };
+		D60EF98A13C9F806002627AA /* GigaPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GigaPixel.m; sourceTree = "<group>"; };
+		D60EF98B13C9F806002627AA /* GigaPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GigaPixel.h; sourceTree = "<group>"; };
+		D60EF98C13C9F806002627AA /* glUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glUtil.h; sourceTree = "<group>"; };
+		D60EF98D13C9F806002627AA /* PyramidLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyramidLevel.h; sourceTree = "<group>"; };
+		D60EF98E13C9F806002627AA /* PyramidLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyramidLevel.m; sourceTree = "<group>"; };
+		D60EF98F13C9F806002627AA /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		D60EF99013C9F806002627AA /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		D60EF99113C9F806002627AA /* TileLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileLoader.h; sourceTree = "<group>"; };
+		D60EF99213C9F806002627AA /* TileLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileLoader.m; sourceTree = "<group>"; };
+		D60EF99313C9F806002627AA /* TileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileManager.h; sourceTree = "<group>"; };
+		D60EF99413C9F806002627AA /* TileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileManager.m; sourceTree = "<group>"; };
+		D60EF99513C9F806002627AA /* sourceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sourceUtil.h; sourceTree = "<group>"; };
+		D60EF99613C9F806002627AA /* sourceUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sourceUtil.c; sourceTree = "<group>"; };
+		D60EF99713C9F806002627AA /* PrefetchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefetchManager.h; sourceTree = "<group>"; };
+		D60EF99813C9F806002627AA /* PrefetchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefetchManager.m; sourceTree = "<group>"; };
+		D60EF99913C9F806002627AA /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
+		D60EF99A13C9F806002627AA /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
+		D60EF99B13C9F806002627AA /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		D60EF99C13C9F806002627AA /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		D60EF99D13C9F806002627AA /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		D60EF99E13C9F806002627AA /* Texture2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture2D.h; sourceTree = "<group>"; };
+		D60EF99F13C9F806002627AA /* Texture2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Texture2D.m; sourceTree = "<group>"; };
+		D60EF9A013C9F806002627AA /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		D60EF9A113C9F806002627AA /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		D60EF9A213C9F806002627AA /* PollMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollMsg.h; sourceTree = "<group>"; };
+		D60EF9A313C9F806002627AA /* PollMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollMsg.m; sourceTree = "<group>"; };
+		D60EF9A413C9F806002627AA /* esShader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShader.c; sourceTree = "<group>"; };
+		D60EF9A513C9F806002627AA /* esShapes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esShapes.c; sourceTree = "<group>"; };
+		D60EF9A613C9F806002627AA /* esTransform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esTransform.c; sourceTree = "<group>"; };
+		D60EF9A713C9F806002627AA /* esUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esUtil.c; sourceTree = "<group>"; };
+		D60EF9A813C9F806002627AA /* esUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esUtil.h; sourceTree = "<group>"; };
+		D60EF9A913C9F806002627AA /* URLCacheConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLCacheConnection.h; sourceTree = "<group>"; };
+		D60EF9AA13C9F806002627AA /* URLCacheConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLCacheConnection.m; sourceTree = "<group>"; };
+		D60EF9C313C9F82E002627AA /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		D60EF9C413C9F82E002627AA /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		D60EF9C513C9F82E002627AA /* ShaderCom.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ShaderCom.fsh; sourceTree = "<group>"; };
+		D60EF9C613C9F82E002627AA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D60EF9C713C9F82E002627AA /* header3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header3.txt; sourceTree = "<group>"; };
+		D60EF9C813C9F82E002627AA /* header4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header4.txt; sourceTree = "<group>"; };
+		D60EF9C913C9F82E002627AA /* header5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header5.txt; sourceTree = "<group>"; };
+		D60EF9CA13C9F82E002627AA /* header6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header6.txt; sourceTree = "<group>"; };
+		D60EF9CB13C9F82E002627AA /* header7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header7.txt; sourceTree = "<group>"; };
+		D60EF9CC13C9F82E002627AA /* header8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header8.txt; sourceTree = "<group>"; };
+		D60EF9CD13C9F82E002627AA /* header9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header9.txt; sourceTree = "<group>"; };
+		D60EF9CE13C9F82E002627AA /* header10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = header10.txt; sourceTree = "<group>"; };
+		D60EF9CF13C9F82E002627AA /* checkers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkers.png; sourceTree = "<group>"; };
+		D60EF9DD13C9F87A002627AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D60EF9DE13C9F887002627AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D657204A13C617E80002AA67 /* Pathology-interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pathology-interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D657204E13C617E80002AA67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D657205013C617E80002AA67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -205,11 +299,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60EF9DF13C9F887002627AA /* OpenGLES.framework in Frameworks */,
+				D657207813C618DD0002AA67 /* QuartzCore.framework in Frameworks */,
 				D657208013C6190A0002AA67 /* libz.1.2.3.dylib in Frameworks */,
 				D657207E13C618FE0002AA67 /* SystemConfiguration.framework in Frameworks */,
 				D657207C13C618F30002AA67 /* MobileCoreServices.framework in Frameworks */,
 				D657207A13C618E70002AA67 /* CFNetwork.framework in Frameworks */,
-				D657207813C618DD0002AA67 /* QuartzCore.framework in Frameworks */,
 				D657204F13C617E80002AA67 /* UIKit.framework in Frameworks */,
 				D657205113C617E80002AA67 /* Foundation.framework in Frameworks */,
 				D657205313C617E80002AA67 /* CoreGraphics.framework in Frameworks */,
@@ -239,6 +334,8 @@
 		D657204D13C617E80002AA67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D60EF9DE13C9F887002627AA /* OpenGLES.framework */,
+				D60EF9DD13C9F87A002627AA /* QuartzCore.framework */,
 				D657207F13C6190A0002AA67 /* libz.1.2.3.dylib */,
 				D657207D13C618FE0002AA67 /* SystemConfiguration.framework */,
 				D657207B13C618F30002AA67 /* MobileCoreServices.framework */,
@@ -270,6 +367,19 @@
 			children = (
 				D6F7E48613C7BA4000A4C875 /* e.jpg */,
 				D6F7E47F13C7BA0100A4C875 /* b.jpg */,
+				D60EF9C313C9F82E002627AA /* Shader.vsh */,
+				D60EF9C413C9F82E002627AA /* Shader.fsh */,
+				D60EF9C513C9F82E002627AA /* ShaderCom.fsh */,
+				D60EF9C613C9F82E002627AA /* Icon.png */,
+				D60EF9C713C9F82E002627AA /* header3.txt */,
+				D60EF9C813C9F82E002627AA /* header4.txt */,
+				D60EF9C913C9F82E002627AA /* header5.txt */,
+				D60EF9CA13C9F82E002627AA /* header6.txt */,
+				D60EF9CB13C9F82E002627AA /* header7.txt */,
+				D60EF9CC13C9F82E002627AA /* header8.txt */,
+				D60EF9CD13C9F82E002627AA /* header9.txt */,
+				D60EF9CE13C9F82E002627AA /* header10.txt */,
+				D60EF9CF13C9F82E002627AA /* checkers.png */,
 				D6F7E48013C7BA0200A4C875 /* c.jpg */,
 				D6F7E48113C7BA0200A4C875 /* d.jpg */,
 				D6F7E47313C76DE000A4C875 /* BoxOverlay.png */,
@@ -377,6 +487,49 @@
 		D65720C713C61A900002AA67 /* GigaPixel */ = {
 			isa = PBXGroup;
 			children = (
+				D60EF98013C9F806002627AA /* SessionList.h */,
+				D60EF98113C9F806002627AA /* SessionList.m */,
+				D60EF98213C9F806002627AA /* Stack.h */,
+				D60EF98313C9F806002627AA /* Stack.m */,
+				D60EF98413C9F806002627AA /* NetCacheManager.h */,
+				D60EF98513C9F806002627AA /* NetCacheManager.m */,
+				D60EF98613C9F806002627AA /* CacheManager.h */,
+				D60EF98713C9F806002627AA /* CacheManager.m */,
+				D60EF98813C9F806002627AA /* GLLock.h */,
+				D60EF98913C9F806002627AA /* GLLock.m */,
+				D60EF98A13C9F806002627AA /* GigaPixel.m */,
+				D60EF98B13C9F806002627AA /* GigaPixel.h */,
+				D60EF98C13C9F806002627AA /* glUtil.h */,
+				D60EF98D13C9F806002627AA /* PyramidLevel.h */,
+				D60EF98E13C9F806002627AA /* PyramidLevel.m */,
+				D60EF98F13C9F806002627AA /* Tile.h */,
+				D60EF99013C9F806002627AA /* Tile.m */,
+				D60EF99113C9F806002627AA /* TileLoader.h */,
+				D60EF99213C9F806002627AA /* TileLoader.m */,
+				D60EF99313C9F806002627AA /* TileManager.h */,
+				D60EF99413C9F806002627AA /* TileManager.m */,
+				D60EF99513C9F806002627AA /* sourceUtil.h */,
+				D60EF99613C9F806002627AA /* sourceUtil.c */,
+				D60EF99713C9F806002627AA /* PrefetchManager.h */,
+				D60EF99813C9F806002627AA /* PrefetchManager.m */,
+				D60EF99913C9F806002627AA /* ES1Renderer.h */,
+				D60EF99A13C9F806002627AA /* ES1Renderer.m */,
+				D60EF99B13C9F806002627AA /* ESRenderer.h */,
+				D60EF99C13C9F806002627AA /* EAGLView.h */,
+				D60EF99D13C9F806002627AA /* EAGLView.m */,
+				D60EF99E13C9F806002627AA /* Texture2D.h */,
+				D60EF99F13C9F806002627AA /* Texture2D.m */,
+				D60EF9A013C9F806002627AA /* Message.h */,
+				D60EF9A113C9F806002627AA /* Message.m */,
+				D60EF9A213C9F806002627AA /* PollMsg.h */,
+				D60EF9A313C9F806002627AA /* PollMsg.m */,
+				D60EF9A413C9F806002627AA /* esShader.c */,
+				D60EF9A513C9F806002627AA /* esShapes.c */,
+				D60EF9A613C9F806002627AA /* esTransform.c */,
+				D60EF9A713C9F806002627AA /* esUtil.c */,
+				D60EF9A813C9F806002627AA /* esUtil.h */,
+				D60EF9A913C9F806002627AA /* URLCacheConnection.h */,
+				D60EF9AA13C9F806002627AA /* URLCacheConnection.m */,
 			);
 			name = GigaPixel;
 			sourceTree = "<group>";
@@ -495,6 +648,16 @@
 				D6F7E48413C7BA0200A4C875 /* c.jpg in Resources */,
 				D6F7E48513C7BA0200A4C875 /* d.jpg in Resources */,
 				D6F7E48713C7BA4000A4C875 /* e.jpg in Resources */,
+				D60EF9D313C9F82E002627AA /* Icon.png in Resources */,
+				D60EF9D413C9F82E002627AA /* header3.txt in Resources */,
+				D60EF9D513C9F82E002627AA /* header4.txt in Resources */,
+				D60EF9D613C9F82E002627AA /* header5.txt in Resources */,
+				D60EF9D713C9F82E002627AA /* header6.txt in Resources */,
+				D60EF9D813C9F82E002627AA /* header7.txt in Resources */,
+				D60EF9D913C9F82E002627AA /* header8.txt in Resources */,
+				D60EF9DA13C9F82E002627AA /* header9.txt in Resources */,
+				D60EF9DB13C9F82E002627AA /* header10.txt in Resources */,
+				D60EF9DC13C9F82E002627AA /* checkers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +708,31 @@
 				D657211913C6233F0002AA67 /* CellLoading.m in Sources */,
 				D657212113C6330A0002AA67 /* WebViewController.m in Sources */,
 				D657212513C642D70002AA67 /* ChapterCell.m in Sources */,
+				D60EF9AB13C9F806002627AA /* SessionList.m in Sources */,
+				D60EF9AC13C9F806002627AA /* Stack.m in Sources */,
+				D60EF9AD13C9F806002627AA /* NetCacheManager.m in Sources */,
+				D60EF9AE13C9F806002627AA /* CacheManager.m in Sources */,
+				D60EF9AF13C9F806002627AA /* GLLock.m in Sources */,
+				D60EF9B013C9F806002627AA /* GigaPixel.m in Sources */,
+				D60EF9B113C9F806002627AA /* PyramidLevel.m in Sources */,
+				D60EF9B213C9F806002627AA /* Tile.m in Sources */,
+				D60EF9B313C9F806002627AA /* TileLoader.m in Sources */,
+				D60EF9B413C9F806002627AA /* TileManager.m in Sources */,
+				D60EF9B513C9F806002627AA /* sourceUtil.c in Sources */,
+				D60EF9B613C9F806002627AA /* PrefetchManager.m in Sources */,
+				D60EF9B713C9F806002627AA /* ES1Renderer.m in Sources */,
+				D60EF9B813C9F806002627AA /* EAGLView.m in Sources */,
+				D60EF9B913C9F806002627AA /* Texture2D.m in Sources */,
+				D60EF9BA13C9F806002627AA /* Message.m in Sources */,
+				D60EF9BB13C9F806002627AA /* PollMsg.m in Sources */,
+				D60EF9BC13C9F806002627AA /* esShader.c in Sources */,
+				D60EF9BD13C9F806002627AA /* esShapes.c in Sources */,
+				D60EF9BE13C9F806002627AA /* esTransform.c in Sources */,
+				D60EF9BF13C9F806002627AA /* esUtil.c in Sources */,
+				D60EF9C013C9F806002627AA /* URLCacheConnection.m in Sources */,
+				D60EF9D013C9F82E002627AA /* Shader.vsh in Sources */,
+				D60EF9D113C9F82E002627AA /* Shader.fsh in Sources */,
+				D60EF9D213C9F82E002627AA /* ShaderCom.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
