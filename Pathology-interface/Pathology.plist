@@ -6,10 +6,12 @@
 	<dict>
 		<key>1</key>
 		<dict>
-			<key>keywords</key>
-			<string>computer, science, history, biology, math, physics</string>
+			<key>gigapixel</key>
+			<string>1</string>
 			<key>image</key>
 			<string>c.jpg</string>
+			<key>keywords</key>
+			<string>computer, science, history, biology, math, physics</string>
 			<key>synoposis</key>
 			<string>this is a test description of synoposis</string>
 			<key>title</key>
@@ -17,10 +19,12 @@
 		</dict>
 		<key>2</key>
 		<dict>
-			<key>keywords</key>
-			<string>natural, history, social</string>
+			<key>gigapixel</key>
+			<string>2</string>
 			<key>image</key>
 			<string>c.jpg</string>
+			<key>keywords</key>
+			<string>natural, history, social</string>
 			<key>synoposis</key>
 			<string>this is a test description of synoposis</string>
 			<key>title</key>
@@ -31,10 +35,12 @@
 	<dict>
 		<key>3</key>
 		<dict>
-			<key>keywords</key>
-			<string>natural, animal, birds, dogs</string>
+			<key>gigapixel</key>
+			<string>3</string>
 			<key>image</key>
 			<string>b.jpg</string>
+			<key>keywords</key>
+			<string>natural, animal, birds, dogs</string>
 			<key>synoposis</key>
 			<string>this is another synoposis!</string>
 			<key>title</key>
@@ -42,10 +48,12 @@
 		</dict>
 		<key>4</key>
 		<dict>
-			<key>keywords</key>
-			<string>Katy Perry, Maroon 5, Linkin Park, Taylor Swift</string>
+			<key>gigapixel</key>
+			<string>0</string>
 			<key>image</key>
 			<string>e.jpg</string>
+			<key>keywords</key>
+			<string>Katy Perry, Maroon 5, Linkin Park, Taylor Swift</string>
 			<key>synoposis</key>
 			<string>tadall ,a.d tea,d.. ad</string>
 			<key>title</key>
@@ -56,6 +64,8 @@
 	<dict>
 		<key>5</key>
 		<dict>
+			<key>gigapixel</key>
+			<string>19</string>
 			<key>image</key>
 			<string>b.jpg</string>
 			<key>synoposis</key>
@@ -65,6 +75,8 @@
 		</dict>
 		<key>6</key>
 		<dict>
+			<key>gigapixel</key>
+			<string>0</string>
 			<key>image</key>
 			<string>c.jpg</string>
 			<key>synoposis</key>

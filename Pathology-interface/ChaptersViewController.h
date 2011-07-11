@@ -27,7 +27,7 @@
     
     NSMutableDictionary *chapters;
     
-    NSInteger page;
+    //NSInteger page;
 }
 
 @property (retain) IBOutlet UINavigationBar *navBar;

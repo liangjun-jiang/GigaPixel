@@ -317,6 +317,7 @@ extern int maxId;
 -(void)quitApp
 {
 	exit(1);
+    
 }
 
 -(void)followSession

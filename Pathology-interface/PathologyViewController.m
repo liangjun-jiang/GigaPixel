@@ -11,6 +11,7 @@
 #import "ButtonGroup.h"
 #import "ButtonGroupButton.h"
 #import "ChaptersViewController.h"
+#import "GigaPixelViewController.h"
 
 @implementation PathologyViewController
 @synthesize keywordButtonGroup;
@@ -65,9 +66,13 @@
 
 
 
--(IBAction)doSomething
+-(IBAction)displayGigapixel
 {
-    
+    GigaPixelViewController *vc =[[[GigaPixelViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+    vc.gigapixelIdentifier = gigapixelIdentifier;   
+    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentModalViewController:vc animated:YES];
+
 }
 
 -(NSMutableArray *)parseKeywords:(NSString *)keywordsString
@@ -120,14 +125,21 @@
 {
     [super viewDidLoad];
     self.navBar.topItem.title = [chapter objectForKey:@"title"];
-    
+    gigaPixelButton.enabled = FALSE;
     largeImage.image = [UIImage imageNamed:[chapter objectForKey:@"image"]];
     pathologyNameLabel.text = [chapter objectForKey:@"title"];
     synoposisView.text = [chapter objectForKey:@"synoposis"];
     
-    //temporary here
+    gigapixelIdentifier = [[chapter objectForKey:@"gigapixel"] intValue];
+    
+    if (gigapixelIdentifier) {
+        gigaPixelButton.enabled = TRUE;
+    }
+    
     NSString *keywordStr = [NSString stringWithFormat:@"%@", [chapter objectForKey:@"keywords"]];
    [self displayKeywords:[self parseKeywords:keywordStr]];
+    
+    
 }
 
 - (void)viewDidUnload

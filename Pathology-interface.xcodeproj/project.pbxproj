@@ -29,9 +29,6 @@
 		D60EF9BE13C9F806002627AA /* esTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A613C9F806002627AA /* esTransform.c */; };
 		D60EF9BF13C9F806002627AA /* esUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9A713C9F806002627AA /* esUtil.c */; };
 		D60EF9C013C9F806002627AA /* URLCacheConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9AA13C9F806002627AA /* URLCacheConnection.m */; };
-		D60EF9D013C9F82E002627AA /* Shader.vsh in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9C313C9F82E002627AA /* Shader.vsh */; };
-		D60EF9D113C9F82E002627AA /* Shader.fsh in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9C413C9F82E002627AA /* Shader.fsh */; };
-		D60EF9D213C9F82E002627AA /* ShaderCom.fsh in Sources */ = {isa = PBXBuildFile; fileRef = D60EF9C513C9F82E002627AA /* ShaderCom.fsh */; };
 		D60EF9D313C9F82E002627AA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C613C9F82E002627AA /* Icon.png */; };
 		D60EF9D413C9F82E002627AA /* header3.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C713C9F82E002627AA /* header3.txt */; };
 		D60EF9D513C9F82E002627AA /* header4.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C813C9F82E002627AA /* header4.txt */; };
@@ -43,6 +40,7 @@
 		D60EF9DB13C9F82E002627AA /* header10.txt in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CE13C9F82E002627AA /* header10.txt */; };
 		D60EF9DC13C9F82E002627AA /* checkers.png in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9CF13C9F82E002627AA /* checkers.png */; };
 		D60EF9DF13C9F887002627AA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60EF9DE13C9F887002627AA /* OpenGLES.framework */; };
+		D60EF9E913CA0A25002627AA /* GigaPixel.plist in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9E813CA0A25002627AA /* GigaPixel.plist */; };
 		D657204F13C617E80002AA67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657204E13C617E80002AA67 /* UIKit.framework */; };
 		D657205113C617E80002AA67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657205013C617E80002AA67 /* Foundation.framework */; };
 		D657205313C617E80002AA67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657205213C617E80002AA67 /* CoreGraphics.framework */; };
@@ -107,6 +105,11 @@
 		D67D3CB913C69EA000ED0A59 /* ChapterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D67D3CB813C69E9F00ED0A59 /* ChapterCell.xib */; };
 		D67D3CBB13C69EF900ED0A59 /* InstantWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = D67D3CBA13C69EF900ED0A59 /* InstantWatch.png */; };
 		D67D3CBD13C69F2000ED0A59 /* ExampleImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D67D3CBC13C69F2000ED0A59 /* ExampleImage.jpg */; };
+		D68755BC13CB27FF000D1C63 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C313C9F82E002627AA /* Shader.vsh */; };
+		D68755BE13CB2838000D1C63 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C413C9F82E002627AA /* Shader.fsh */; };
+		D68755BF13CB285D000D1C63 /* ShaderCom.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C513C9F82E002627AA /* ShaderCom.fsh */; };
+		D69A68F813CA27DD00687493 /* PresoModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A68F713CA27DD00687493 /* PresoModeViewController.m */; };
+		D69A68FB13CA27F100687493 /* PresoModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69A68FA13CA27F100687493 /* PresoModeViewController.xib */; };
 		D6F7E47413C76DE000A4C875 /* BoxOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47313C76DE000A4C875 /* BoxOverlay.png */; };
 		D6F7E48313C7BA0200A4C875 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47F13C7BA0100A4C875 /* b.jpg */; };
 		D6F7E48413C7BA0200A4C875 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E48013C7BA0200A4C875 /* c.jpg */; };
@@ -173,6 +176,7 @@
 		D60EF9CF13C9F82E002627AA /* checkers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkers.png; sourceTree = "<group>"; };
 		D60EF9DD13C9F87A002627AA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D60EF9DE13C9F887002627AA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D60EF9E813CA0A25002627AA /* GigaPixel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GigaPixel.plist; sourceTree = "<group>"; };
 		D657204A13C617E80002AA67 /* Pathology-interface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pathology-interface.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D657204E13C617E80002AA67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D657205013C617E80002AA67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -287,6 +291,9 @@
 		D67D3CB813C69E9F00ED0A59 /* ChapterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChapterCell.xib; sourceTree = "<group>"; };
 		D67D3CBA13C69EF900ED0A59 /* InstantWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstantWatch.png; sourceTree = "<group>"; };
 		D67D3CBC13C69F2000ED0A59 /* ExampleImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ExampleImage.jpg; sourceTree = "<group>"; };
+		D69A68F613CA27DD00687493 /* PresoModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresoModeViewController.h; sourceTree = "<group>"; };
+		D69A68F713CA27DD00687493 /* PresoModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresoModeViewController.m; sourceTree = "<group>"; };
+		D69A68FA13CA27F100687493 /* PresoModeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresoModeViewController.xib; sourceTree = "<group>"; };
 		D6F7E47313C76DE000A4C875 /* BoxOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxOverlay.png; sourceTree = "<group>"; };
 		D6F7E47F13C7BA0100A4C875 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
 		D6F7E48013C7BA0200A4C875 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
@@ -394,6 +401,7 @@
 				D657205A13C617E80002AA67 /* Pathology-interface-Prefix.pch */,
 				D657205B13C617E80002AA67 /* main.m */,
 				D67D3CB613C6835600ED0A59 /* Pathology.plist */,
+				D60EF9E813CA0A25002627AA /* GigaPixel.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -537,7 +545,9 @@
 		D65720C813C61AA90002AA67 /* Main Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D657212613C642ED0002AA67 /* SectionCell.xib */,
+				D69A68FA13CA27F100687493 /* PresoModeViewController.xib */,
+				D69A68F613CA27DD00687493 /* PresoModeViewController.h */,
+				D69A68F713CA27DD00687493 /* PresoModeViewController.m */,
 				D65720EF13C61DCF0002AA67 /* Chapter.h */,
 				D65720F013C61DCF0002AA67 /* Chapter.m */,
 				D657205D13C617E80002AA67 /* Pathology_interfaceAppDelegate.h */,
@@ -551,6 +561,7 @@
 				D65720F613C61E630002AA67 /* ButtonGroupButton.m */,
 				D65720F813C61EB50002AA67 /* SectionCell.h */,
 				D65720F913C61EB50002AA67 /* SectionCell.m */,
+				D657212613C642ED0002AA67 /* SectionCell.xib */,
 				D657210013C61FC50002AA67 /* SectionsViewController.h */,
 				D657210113C61FC50002AA67 /* SectionsViewController.m */,
 				D657210213C61FC50002AA67 /* SectionsViewController.xib */,
@@ -627,6 +638,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68755BF13CB285D000D1C63 /* ShaderCom.fsh in Resources */,
+				D68755BE13CB2838000D1C63 /* Shader.fsh in Resources */,
+				D68755BC13CB27FF000D1C63 /* Shader.vsh in Resources */,
 				D657205913C617E80002AA67 /* InfoPlist.strings in Resources */,
 				D657206213C617E80002AA67 /* MainWindow.xib in Resources */,
 				D657210413C61FC50002AA67 /* SectionsViewController.xib in Resources */,
@@ -658,6 +672,8 @@
 				D60EF9DA13C9F82E002627AA /* header9.txt in Resources */,
 				D60EF9DB13C9F82E002627AA /* header10.txt in Resources */,
 				D60EF9DC13C9F82E002627AA /* checkers.png in Resources */,
+				D60EF9E913CA0A25002627AA /* GigaPixel.plist in Resources */,
+				D69A68FB13CA27F100687493 /* PresoModeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,9 +746,7 @@
 				D60EF9BE13C9F806002627AA /* esTransform.c in Sources */,
 				D60EF9BF13C9F806002627AA /* esUtil.c in Sources */,
 				D60EF9C013C9F806002627AA /* URLCacheConnection.m in Sources */,
-				D60EF9D013C9F82E002627AA /* Shader.vsh in Sources */,
-				D60EF9D113C9F82E002627AA /* Shader.fsh in Sources */,
-				D60EF9D213C9F82E002627AA /* ShaderCom.fsh in Sources */,
+				D69A68F813CA27DD00687493 /* PresoModeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +815,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pathology-interface/Pathology-interface-Prefix.pch";
 				INFOPLIST_FILE = "Pathology-interface/Pathology-interface-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -814,6 +829,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pathology-interface/Pathology-interface-Prefix.pch";
 				INFOPLIST_FILE = "Pathology-interface/Pathology-interface-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

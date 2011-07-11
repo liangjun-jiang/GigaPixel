@@ -97,6 +97,7 @@
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
+-(id)initWithFrame:(CGRect)frame andImg:(NSString *)img andUrl:(NSString *)url andNumSlices:(int)nS;
 -(void)showSessions;
 -(void)pollRequest:(id)sender;
 -(void)gridClicked;

@@ -53,29 +53,7 @@
     gridView.leftContentInset = 60.0f;
     gridView.rightContentInset = 60.0f;
     navBar.topItem.title = sectionName;
-    //navBar.topItem.rightBarButtonItem.title = [NSString stringWithFormat:@"Section: %@", section.title];
-    
 }
-
-/*
--(void)setSection:(Section *)value
-{
-    if (section == value) {
-        return;
-    }
-    [section release];
-    section = [value retain];
-    self.title = @"test title";
-    //self.title = [NSString stringWithFormat:@"Section: %@",section.number];
-    navBar.topItem.title = self.title;
-    navBar.topItem.rightBarButtonItem.title = @"Detail";//[NSString stringWithFormat:@"", section.number];
-    page = 0;
-    [self requestSectionPage]; //
-    [gridView reloadData];
-    
-}
-*/
-
 
 - (void)viewDidUnload
 {
@@ -121,6 +99,9 @@
 	cell.thumbnailImageView.image = [UIImage imageNamed:imageName]; 
     
     cell.chapterNameLabel.text = [[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]] objectForKey:@"title"];
+    if ([[[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]] objectForKey:@"gigapixel"] intValue] == 0) {
+        cell.gigaPixelAvailable.hidden = YES;
+    }
     
     return cell;
 }

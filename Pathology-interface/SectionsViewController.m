@@ -5,6 +5,7 @@
 //  Created by Liangjun Jiang on 7/7/11.
 //  Copyright 2011 Harvard University Extension School. All rights reserved.
 //
+#import <unistd.h>
 
 #import "SectionsViewController.h"
 #import "Section.h"
@@ -15,6 +16,7 @@
 #import "WebViewController.h"
 //#import "UserId.h"
 #import "AQGridView.h"
+#import "PresoModeViewController.h"
 #import "Chapter.h"
 
 @implementation SectionsViewController
@@ -22,6 +24,9 @@
 @synthesize gridView;
 @synthesize infoButton;
 @synthesize externalDisplayButton;
+@synthesize popoverController;
+@synthesize presoModeViewController;
+@synthesize extWindow;
 //@synthesize user;
 
 
@@ -35,16 +40,18 @@
 
 - (void)viewDidLoad;
 {
-    sections = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Pathology" ofType:@"plist"]];
+    if (sections == nil) {
+        sections = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Pathology" ofType:@"plist"]];
+    }
+    
+    presoModeViewController.contentSizeForViewInPopover = CGSizeMake(320, 252);
+    NSLog(@"preso: %@", presoModeViewController);
+    
 }
-
-
 - (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView;
 {
 	return [self.sections count];
 }
-
-
 
 - (AQGridViewCell *) gridView: (AQGridView *)inGridView cellForItemAtIndex: (NSUInteger) index;
 {
@@ -67,7 +74,6 @@
 -(void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
 {
     ChaptersViewController *vc = [[[ChaptersViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    //vc.sectionName = [[sections objectForKey:[[sections allKeys] objectAtIndex:index]] objectForKey:@"title"];
     vc.chapters = [sections objectForKey:[[sections allKeys] objectAtIndex:index]];
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentModalViewController:vc animated:YES];
@@ -88,6 +94,8 @@
     sections = nil;
     [infoButton release];
     [externalDisplayButton release];
+    [popoverController release];
+    [presoModeViewController release];
     [super dealloc];
 }
 
@@ -98,11 +106,41 @@
 
 - (IBAction)externalDisplay
 {
-    WebViewController *web = [[WebViewController alloc] initWithUrlString:@"http://neuro.med.harvard.edu/"];
-    web.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentModalViewController:web animated:YES];
-    [web release];
+    if (popoverController == nil) {
+        Class cls = NSClassFromString(@"UIPopoverController");
+        if (cls != nil) {
+            UIPopoverController *aPopoverController =
+            [[cls alloc] initWithContentViewController:self.presoModeViewController];
+            aPopoverController.delegate = self;
+            self.popoverController = aPopoverController;
+            [aPopoverController release];
+            [popoverController presentPopoverFromBarButtonItem:externalDisplayButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+            
+        }
+    }
+    
 }
+
+-(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.popoverController = nil;
+}
+
+-(void)externalWindow:(UIWindow *)window
+{
+    self.extWindow = window;
+}
+
+-(void)presoMode:(BOOL)isOn
+{
+    self.extWindow.hidden = YES;
+    if (isOn == YES) {
+        [extWindow addSubview:self.view];
+    }
+    
+    self.extWindow.hidden = NO;
+}
+
 - (IBAction)info
 {
     UIActionSheet *actionAlert = [[UIActionSheet alloc] initWithTitle:@"Info" delegate:self cancelButtonTitle:nil destructiveButtonTitle:nil otherButtonTitles:@"Credits", @"Dr.Pfister's lab", nil];

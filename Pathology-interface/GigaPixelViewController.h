@@ -10,7 +10,13 @@
 
 
 @interface GigaPixelViewController : UIViewController {
+    NSInteger gigapixelIdentifier;
+    UINavigationBar *nav;
     
 }
 
+@property (readwrite) NSInteger gigapixelIdentifier;
+@property (nonatomic, retain) IBOutlet UINavigationBar *nav;
+
+-(IBAction)back;
 @end

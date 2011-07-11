@@ -25,6 +25,7 @@
     NSMutableDictionary *chapter;
     //NSArray *keywords;
     
+    NSInteger gigapixelIdentifier;
     
     UILabel *anotherLabel; //TODO: some meaningful name
     UILabel *helpfulLabel;
@@ -53,6 +54,6 @@
 
 
 -(IBAction)back;
--(IBAction)doSomething;
+-(IBAction)displayGigapixel;
 
 @end
