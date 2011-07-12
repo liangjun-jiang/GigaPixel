@@ -110,6 +110,7 @@
 		D68755BF13CB285D000D1C63 /* ShaderCom.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D60EF9C513C9F82E002627AA /* ShaderCom.fsh */; };
 		D69A68F813CA27DD00687493 /* PresoModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A68F713CA27DD00687493 /* PresoModeViewController.m */; };
 		D69A68FB13CA27F100687493 /* PresoModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69A68FA13CA27F100687493 /* PresoModeViewController.xib */; };
+		D6A9151013CC84BE00C8BADE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9150F13CC84BE00C8BADE /* SearchViewController.m */; };
 		D6F7E47413C76DE000A4C875 /* BoxOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47313C76DE000A4C875 /* BoxOverlay.png */; };
 		D6F7E48313C7BA0200A4C875 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47F13C7BA0100A4C875 /* b.jpg */; };
 		D6F7E48413C7BA0200A4C875 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E48013C7BA0200A4C875 /* c.jpg */; };
@@ -294,6 +295,8 @@
 		D69A68F613CA27DD00687493 /* PresoModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresoModeViewController.h; sourceTree = "<group>"; };
 		D69A68F713CA27DD00687493 /* PresoModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresoModeViewController.m; sourceTree = "<group>"; };
 		D69A68FA13CA27F100687493 /* PresoModeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresoModeViewController.xib; sourceTree = "<group>"; };
+		D6A9150E13CC84BE00C8BADE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		D6A9150F13CC84BE00C8BADE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		D6F7E47313C76DE000A4C875 /* BoxOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxOverlay.png; sourceTree = "<group>"; };
 		D6F7E47F13C7BA0100A4C875 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
 		D6F7E48013C7BA0200A4C875 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
@@ -372,6 +375,7 @@
 		D657205513C617E80002AA67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D657206013C617E80002AA67 /* MainWindow.xib */,
 				D6F7E48613C7BA4000A4C875 /* e.jpg */,
 				D6F7E47F13C7BA0100A4C875 /* b.jpg */,
 				D60EF9C313C9F82E002627AA /* Shader.vsh */,
@@ -545,47 +549,88 @@
 		D65720C813C61AA90002AA67 /* Main Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D69A68FA13CA27F100687493 /* PresoModeViewController.xib */,
-				D69A68F613CA27DD00687493 /* PresoModeViewController.h */,
-				D69A68F713CA27DD00687493 /* PresoModeViewController.m */,
-				D65720EF13C61DCF0002AA67 /* Chapter.h */,
-				D65720F013C61DCF0002AA67 /* Chapter.m */,
+				D6A9150D13CC82D300C8BADE /* TODO */,
+				D6A9150C13CC829A00C8BADE /* Utility */,
+				D6A9150B13CC827300C8BADE /* Pathology */,
+				D6A9150A13CC824000C8BADE /* Chapters */,
+				D6A9150813CC821700C8BADE /* Sections */,
 				D657205D13C617E80002AA67 /* Pathology_interfaceAppDelegate.h */,
 				D657205E13C617E80002AA67 /* Pathology_interfaceAppDelegate.m */,
-				D657206013C617E80002AA67 /* MainWindow.xib */,
+			);
+			name = "Main Controller";
+			sourceTree = "<group>";
+		};
+		D6A9150813CC821700C8BADE /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D657211E13C633060002AA67 /* WebViewController.h */,
+				D657211F13C633080002AA67 /* WebViewController.m */,
+				D657212013C633090002AA67 /* WebViewController.xib */,
 				D65720E813C61D900002AA67 /* Section.h */,
 				D65720E913C61D900002AA67 /* Section.m */,
-				D65720F213C61E280002AA67 /* ButtonGroup.h */,
-				D65720F313C61E280002AA67 /* ButtonGroup.m */,
-				D65720F513C61E630002AA67 /* ButtonGroupButton.h */,
-				D65720F613C61E630002AA67 /* ButtonGroupButton.m */,
 				D65720F813C61EB50002AA67 /* SectionCell.h */,
 				D65720F913C61EB50002AA67 /* SectionCell.m */,
 				D657212613C642ED0002AA67 /* SectionCell.xib */,
 				D657210013C61FC50002AA67 /* SectionsViewController.h */,
 				D657210113C61FC50002AA67 /* SectionsViewController.m */,
 				D657210213C61FC50002AA67 /* SectionsViewController.xib */,
-				D657210513C61FE20002AA67 /* ChaptersViewController.h */,
-				D657210613C61FE20002AA67 /* ChaptersViewController.m */,
-				D657210713C61FE20002AA67 /* ChaptersViewController.xib */,
-				D657210A13C6200A0002AA67 /* PathologyViewController.h */,
-				D657210B13C6200A0002AA67 /* PathologyViewController.m */,
-				D657210C13C6200A0002AA67 /* PathologyViewController.xib */,
-				D657210F13C6204D0002AA67 /* UserId.h */,
-				D657211013C6204D0002AA67 /* UserId.m */,
-				D657211213C620790002AA67 /* GigaPixelViewController.h */,
-				D657211313C620790002AA67 /* GigaPixelViewController.m */,
-				D657211413C620790002AA67 /* GigaPixelViewController.xib */,
-				D657211713C6233E0002AA67 /* CellLoading.h */,
-				D657211813C6233E0002AA67 /* CellLoading.m */,
-				D657211E13C633060002AA67 /* WebViewController.h */,
-				D657211F13C633080002AA67 /* WebViewController.m */,
-				D657212013C633090002AA67 /* WebViewController.xib */,
+				D6A9150E13CC84BE00C8BADE /* SearchViewController.h */,
+				D6A9150F13CC84BE00C8BADE /* SearchViewController.m */,
+			);
+			name = Sections;
+			sourceTree = "<group>";
+		};
+		D6A9150A13CC824000C8BADE /* Chapters */ = {
+			isa = PBXGroup;
+			children = (
 				D657212313C642D40002AA67 /* ChapterCell.h */,
 				D67D3CB813C69E9F00ED0A59 /* ChapterCell.xib */,
 				D657212413C642D60002AA67 /* ChapterCell.m */,
+				D657210513C61FE20002AA67 /* ChaptersViewController.h */,
+				D657210613C61FE20002AA67 /* ChaptersViewController.m */,
+				D657210713C61FE20002AA67 /* ChaptersViewController.xib */,
+				D65720EF13C61DCF0002AA67 /* Chapter.h */,
+				D65720F013C61DCF0002AA67 /* Chapter.m */,
 			);
-			name = "Main Controller";
+			name = Chapters;
+			sourceTree = "<group>";
+		};
+		D6A9150B13CC827300C8BADE /* Pathology */ = {
+			isa = PBXGroup;
+			children = (
+				D657211213C620790002AA67 /* GigaPixelViewController.h */,
+				D657211313C620790002AA67 /* GigaPixelViewController.m */,
+				D657211413C620790002AA67 /* GigaPixelViewController.xib */,
+				D65720F213C61E280002AA67 /* ButtonGroup.h */,
+				D65720F313C61E280002AA67 /* ButtonGroup.m */,
+				D65720F513C61E630002AA67 /* ButtonGroupButton.h */,
+				D65720F613C61E630002AA67 /* ButtonGroupButton.m */,
+				D657210A13C6200A0002AA67 /* PathologyViewController.h */,
+				D657210B13C6200A0002AA67 /* PathologyViewController.m */,
+				D657210C13C6200A0002AA67 /* PathologyViewController.xib */,
+			);
+			name = Pathology;
+			sourceTree = "<group>";
+		};
+		D6A9150C13CC829A00C8BADE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D69A68FA13CA27F100687493 /* PresoModeViewController.xib */,
+				D69A68F613CA27DD00687493 /* PresoModeViewController.h */,
+				D69A68F713CA27DD00687493 /* PresoModeViewController.m */,
+				D657211713C6233E0002AA67 /* CellLoading.h */,
+				D657211813C6233E0002AA67 /* CellLoading.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		D6A9150D13CC82D300C8BADE /* TODO */ = {
+			isa = PBXGroup;
+			children = (
+				D657210F13C6204D0002AA67 /* UserId.h */,
+				D657211013C6204D0002AA67 /* UserId.m */,
+			);
+			name = TODO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -747,6 +792,7 @@
 				D60EF9BF13C9F806002627AA /* esUtil.c in Sources */,
 				D60EF9C013C9F806002627AA /* URLCacheConnection.m in Sources */,
 				D69A68F813CA27DD00687493 /* PresoModeViewController.m in Sources */,
+				D6A9151013CC84BE00C8BADE /* SearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

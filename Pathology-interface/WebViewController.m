@@ -56,12 +56,15 @@
 }
 - (IBAction)back;
 {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     [self dismissModalViewControllerAnimated:YES];
 }
 - (IBAction)demo;
 {
+    /*
     urlString = @"http://www.youtube.com/gigaPixelDemo";
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+    */
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView;
 {

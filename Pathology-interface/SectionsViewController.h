@@ -9,22 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "AQGridViewController.h"
 #import "CellLoading.h"
-//#import "UserId.h" //TODO
 #import "AQGridView.h"
-#import "PresoModeViewController.h"
+#import "SearchViewController.h"
 
 
-@interface SectionsViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource, UIActionSheetDelegate, UIPopoverControllerDelegate, PresoModeViewDelegate>{
+
+@interface SectionsViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource, UIActionSheetDelegate, UIPopoverControllerDelegate>{
     AQGridView *gridView;
     NSMutableDictionary *sections;
     
     UIBarButtonItem *infoButton;
-    UIBarButtonItem *externalDisplayButton; 
-    UIViewController *presoModeViewController;
+    UIBarButtonItem *searchButton; 
     UIPopoverController *popoverController;
     
-    UIWindow *extWindow;
-    
+    SearchViewController *searchView;
    // UserId *user;
     
 }
@@ -32,13 +30,12 @@
 @property (nonatomic, retain) NSMutableDictionary *sections;
 @property (nonatomic, retain) IBOutlet AQGridView *gridView;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *infoButton;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *externalDisplayButton; 
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *searchButton; 
 @property (nonatomic, retain) IBOutlet UIPopoverController *popoverController;
-@property (nonatomic, retain) IBOutlet UIViewController *presoModeViewController;
-@property (nonatomic, retain) UIWindow *extWindow;
+
 //@property (retain) UserId *user;
 
-- (IBAction)externalDisplay; //TODO
+- (IBAction)search; //TODO
 - (IBAction)info;
 
 

@@ -6,28 +6,23 @@
 //  Copyright 2011 Harvard University Extension School. All rights reserved.
 //
 #import <unistd.h>
-
 #import "SectionsViewController.h"
-#import "Section.h"
 #import "SectionCell.h"
 #import "ChaptersViewController.h"
-#import "CJSONDeserializer.h"
-#import "GigaPixelViewController.h"
 #import "WebViewController.h"
-//#import "UserId.h"
 #import "AQGridView.h"
-#import "PresoModeViewController.h"
-#import "Chapter.h"
+
+//#import "Chapter.h"
+//#import "UserId.h"
+//#import "Section.h"
+
 
 @implementation SectionsViewController
 @synthesize sections;
 @synthesize gridView;
 @synthesize infoButton;
-@synthesize externalDisplayButton;
+@synthesize searchButton;
 @synthesize popoverController;
-@synthesize presoModeViewController;
-@synthesize extWindow;
-//@synthesize user;
 
 
 - (void)viewWillAppear:(BOOL)animated;
@@ -43,9 +38,7 @@
     if (sections == nil) {
         sections = [[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Pathology" ofType:@"plist"]];
     }
-    
-    presoModeViewController.contentSizeForViewInPopover = CGSizeMake(320, 252);
-    NSLog(@"preso: %@", presoModeViewController);
+    searchView = [[SearchViewController alloc] init];
     
 }
 - (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView;
@@ -93,9 +86,8 @@
     [sections release];
     sections = nil;
     [infoButton release];
-    [externalDisplayButton release];
+    [searchButton release];
     [popoverController release];
-    [presoModeViewController release];
     [super dealloc];
 }
 
@@ -104,21 +96,15 @@
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)externalDisplay
+- (IBAction)search
 {
-    if (popoverController == nil) {
-        Class cls = NSClassFromString(@"UIPopoverController");
-        if (cls != nil) {
-            UIPopoverController *aPopoverController =
-            [[cls alloc] initWithContentViewController:self.presoModeViewController];
-            aPopoverController.delegate = self;
-            self.popoverController = aPopoverController;
-            [aPopoverController release];
-            [popoverController presentPopoverFromBarButtonItem:externalDisplayButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
-            
-        }
+    if (popoverController == nil && searchView !=nil) {
+        popoverController = [[UIPopoverController alloc] 
+               initWithContentViewController:searchView];               
     }
-    
+	[searchView setPopup:popoverController];
+	[popoverController presentPopoverFromBarButtonItem:searchButton 
+                permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 -(void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
@@ -126,20 +112,6 @@
     self.popoverController = nil;
 }
 
--(void)externalWindow:(UIWindow *)window
-{
-    self.extWindow = window;
-}
-
--(void)presoMode:(BOOL)isOn
-{
-    self.extWindow.hidden = YES;
-    if (isOn == YES) {
-        [extWindow addSubview:self.view];
-    }
-    
-    self.extWindow.hidden = NO;
-}
 
 - (IBAction)info
 {
