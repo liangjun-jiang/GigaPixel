@@ -149,8 +149,10 @@
 
 #define PI 3.14
 
+/*
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
+    NSLog(@"will called?");
     if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
         [[NSBundle mainBundle] loadNibNamed:@"PathologyPortaitViewController" owner:self options:nil];
         if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
@@ -158,6 +160,7 @@
         }
         
     } else if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)){
+        NSLog(@"landscape");
         [[NSBundle mainBundle] loadNibNamed:@"PathologyViewController" owner:self options:nil];
         if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
             self.view.transform = CGAffineTransformMakeRotation(PI + PI/2);
@@ -166,5 +169,5 @@
         }
     }
 }
-
+ */
 @end

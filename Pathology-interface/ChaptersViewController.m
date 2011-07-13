@@ -105,23 +105,10 @@
 
 -(void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
 {
-    
-    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
-    if (deviceOrientation == UIInterfaceOrientationLandscapeLeft || deviceOrientation == UIInterfaceOrientationLandscapeRight)
-    {
-       PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-        vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
-        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentModalViewController:vc animated:YES];
-    }
-    
-    else 
-    {
-        PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:@"PathologyPortaitViewController" bundle:nil] autorelease];
-        vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
-        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        [self presentModalViewController:vc animated:YES];
-    }
+    PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:@"PathologyViewController" bundle:nil] autorelease];
+    vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
+    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentModalViewController:vc animated:YES];
 }
 
 -(CGSize)portraitGridCellSizeForGridView:(AQGridView *)gridView
