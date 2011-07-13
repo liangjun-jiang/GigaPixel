@@ -48,20 +48,11 @@
 		D657205C13C617E80002AA67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D657205B13C617E80002AA67 /* main.m */; };
 		D657205F13C617E80002AA67 /* Pathology_interfaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D657205E13C617E80002AA67 /* Pathology_interfaceAppDelegate.m */; };
 		D657206213C617E80002AA67 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D657206013C617E80002AA67 /* MainWindow.xib */; };
-		D657207613C618BB0002AA67 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D657207513C618BB0002AA67 /* Reachability.m */; };
 		D657207813C618DD0002AA67 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657207713C618DD0002AA67 /* QuartzCore.framework */; };
 		D657207A13C618E70002AA67 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657207913C618E70002AA67 /* CFNetwork.framework */; };
 		D657207C13C618F30002AA67 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657207B13C618F30002AA67 /* MobileCoreServices.framework */; };
 		D657207E13C618FE0002AA67 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D657207D13C618FE0002AA67 /* SystemConfiguration.framework */; };
 		D657208013C6190A0002AA67 /* libz.1.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D657207F13C6190A0002AA67 /* libz.1.2.3.dylib */; };
-		D657209D13C61A2A0002AA67 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209513C61A2A0002AA67 /* ASIAuthenticationDialog.m */; };
-		D657209E13C61A2A0002AA67 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209613C61A2A0002AA67 /* ASIDataCompressor.m */; };
-		D657209F13C61A2A0002AA67 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209713C61A2A0002AA67 /* ASIDataDecompressor.m */; };
-		D65720A013C61A2A0002AA67 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209813C61A2A0002AA67 /* ASIDownloadCache.m */; };
-		D65720A113C61A2A0002AA67 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209913C61A2A0002AA67 /* ASIFormDataRequest.m */; };
-		D65720A213C61A2A0002AA67 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209A13C61A2A0002AA67 /* ASIHTTPRequest.m */; };
-		D65720A313C61A2A0002AA67 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209B13C61A2A0002AA67 /* ASIInputStream.m */; };
-		D65720A413C61A2A0002AA67 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = D657209C13C61A2A0002AA67 /* ASINetworkQueue.m */; };
 		D65720BC13C61A490002AA67 /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720B213C61A490002AA67 /* AQGridView.m */; };
 		D65720BD13C61A490002AA67 /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720B313C61A490002AA67 /* AQGridViewAnimatorItem.m */; };
 		D65720BE13C61A490002AA67 /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720B413C61A490002AA67 /* AQGridViewCell.m */; };
@@ -72,12 +63,6 @@
 		D65720C313C61A490002AA67 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720B913C61A490002AA67 /* NSIndexSet+AQIndexesOutsideSet.m */; };
 		D65720C413C61A490002AA67 /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720BA13C61A490002AA67 /* NSIndexSet+AQIsSetContiguous.m */; };
 		D65720C513C61A490002AA67 /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720BB13C61A490002AA67 /* UIColor+AQGridView.m */; };
-		D65720D113C61B690002AA67 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720CD13C61B690002AA67 /* CDataScanner.m */; };
-		D65720DF13C61D040002AA67 /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720DC13C61D040002AA67 /* CJSONDeserializer.m */; };
-		D65720E013C61D040002AA67 /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720DD13C61D040002AA67 /* CJSONScanner.m */; };
-		D65720E113C61D040002AA67 /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720DE13C61D040002AA67 /* CJSONSerializer.m */; };
-		D65720E613C61D0F0002AA67 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720E413C61D0F0002AA67 /* CDataScanner_Extensions.m */; };
-		D65720E713C61D0F0002AA67 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720E513C61D0F0002AA67 /* NSDictionary_JSONExtensions.m */; };
 		D65720EA13C61D900002AA67 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720E913C61D900002AA67 /* Section.m */; };
 		D65720F113C61DCF0002AA67 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720F013C61DCF0002AA67 /* Chapter.m */; };
 		D65720F413C61E280002AA67 /* ButtonGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = D65720F313C61E280002AA67 /* ButtonGroup.m */; };
@@ -89,7 +74,6 @@
 		D657210913C61FE20002AA67 /* ChaptersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D657210713C61FE20002AA67 /* ChaptersViewController.xib */; };
 		D657210D13C6200B0002AA67 /* PathologyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D657210B13C6200A0002AA67 /* PathologyViewController.m */; };
 		D657210E13C6200B0002AA67 /* PathologyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D657210C13C6200A0002AA67 /* PathologyViewController.xib */; };
-		D657211113C6204E0002AA67 /* UserId.m in Sources */ = {isa = PBXBuildFile; fileRef = D657211013C6204D0002AA67 /* UserId.m */; };
 		D657211513C6207A0002AA67 /* GigaPixelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D657211313C620790002AA67 /* GigaPixelViewController.m */; };
 		D657211613C6207A0002AA67 /* GigaPixelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D657211413C620790002AA67 /* GigaPixelViewController.xib */; };
 		D657211913C6233F0002AA67 /* CellLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D657211813C6233E0002AA67 /* CellLoading.m */; };
@@ -111,6 +95,7 @@
 		D69A68F813CA27DD00687493 /* PresoModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A68F713CA27DD00687493 /* PresoModeViewController.m */; };
 		D69A68FB13CA27F100687493 /* PresoModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D69A68FA13CA27F100687493 /* PresoModeViewController.xib */; };
 		D6A9151013CC84BE00C8BADE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A9150F13CC84BE00C8BADE /* SearchViewController.m */; };
+		D6A9153013CCE7DD00C8BADE /* PathologyPortaitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6A9152E13CCE7DC00C8BADE /* PathologyPortaitViewController.xib */; };
 		D6F7E47413C76DE000A4C875 /* BoxOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47313C76DE000A4C875 /* BoxOverlay.png */; };
 		D6F7E48313C7BA0200A4C875 /* b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E47F13C7BA0100A4C875 /* b.jpg */; };
 		D6F7E48413C7BA0200A4C875 /* c.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6F7E48013C7BA0200A4C875 /* c.jpg */; };
@@ -189,33 +174,11 @@
 		D657205D13C617E80002AA67 /* Pathology_interfaceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pathology_interfaceAppDelegate.h; sourceTree = "<group>"; };
 		D657205E13C617E80002AA67 /* Pathology_interfaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pathology_interfaceAppDelegate.m; sourceTree = "<group>"; };
 		D657206113C617E80002AA67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		D657207413C618BB0002AA67 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		D657207513C618BB0002AA67 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D657207713C618DD0002AA67 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D657207913C618E70002AA67 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D657207B13C618F30002AA67 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D657207D13C618FE0002AA67 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D657207F13C6190A0002AA67 /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
-		D657208913C61A210002AA67 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		D657208A13C61A210002AA67 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
-		D657208B13C61A210002AA67 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
-		D657208C13C61A210002AA67 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
-		D657208D13C61A210002AA67 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
-		D657208E13C61A210002AA67 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
-		D657208F13C61A210002AA67 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
-		D657209013C61A210002AA67 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
-		D657209113C61A210002AA67 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
-		D657209213C61A210002AA67 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
-		D657209313C61A210002AA67 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
-		D657209413C61A210002AA67 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
-		D657209513C61A2A0002AA67 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
-		D657209613C61A2A0002AA67 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
-		D657209713C61A2A0002AA67 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
-		D657209813C61A2A0002AA67 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
-		D657209913C61A2A0002AA67 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
-		D657209A13C61A2A0002AA67 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
-		D657209B13C61A2A0002AA67 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
-		D657209C13C61A2A0002AA67 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
 		D65720A513C61A490002AA67 /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
 		D65720A613C61A490002AA67 /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
 		D65720A713C61A490002AA67 /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
@@ -239,19 +202,6 @@
 		D65720B913C61A490002AA67 /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
 		D65720BA13C61A490002AA67 /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
 		D65720BB13C61A490002AA67 /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
-		D65720C913C61B690002AA67 /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
-		D65720CD13C61B690002AA67 /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
-		D65720D813C61D040002AA67 /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
-		D65720D913C61D040002AA67 /* CJSONScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONScanner.h; sourceTree = "<group>"; };
-		D65720DA13C61D040002AA67 /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
-		D65720DB13C61D040002AA67 /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
-		D65720DC13C61D040002AA67 /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
-		D65720DD13C61D040002AA67 /* CJSONScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONScanner.m; sourceTree = "<group>"; };
-		D65720DE13C61D040002AA67 /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
-		D65720E213C61D0F0002AA67 /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
-		D65720E313C61D0F0002AA67 /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
-		D65720E413C61D0F0002AA67 /* CDataScanner_Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner_Extensions.m; sourceTree = "<group>"; };
-		D65720E513C61D0F0002AA67 /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		D65720E813C61D900002AA67 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		D65720E913C61D900002AA67 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
 		D65720EF13C61DCF0002AA67 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
@@ -271,8 +221,6 @@
 		D657210A13C6200A0002AA67 /* PathologyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathologyViewController.h; sourceTree = "<group>"; };
 		D657210B13C6200A0002AA67 /* PathologyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathologyViewController.m; sourceTree = "<group>"; };
 		D657210C13C6200A0002AA67 /* PathologyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PathologyViewController.xib; sourceTree = "<group>"; };
-		D657210F13C6204D0002AA67 /* UserId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserId.h; sourceTree = "<group>"; };
-		D657211013C6204D0002AA67 /* UserId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserId.m; sourceTree = "<group>"; };
 		D657211213C620790002AA67 /* GigaPixelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GigaPixelViewController.h; sourceTree = "<group>"; };
 		D657211313C620790002AA67 /* GigaPixelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GigaPixelViewController.m; sourceTree = "<group>"; };
 		D657211413C620790002AA67 /* GigaPixelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GigaPixelViewController.xib; sourceTree = "<group>"; };
@@ -297,6 +245,7 @@
 		D69A68FA13CA27F100687493 /* PresoModeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PresoModeViewController.xib; sourceTree = "<group>"; };
 		D6A9150E13CC84BE00C8BADE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		D6A9150F13CC84BE00C8BADE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		D6A9152E13CCE7DC00C8BADE /* PathologyPortaitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PathologyPortaitViewController.xib; sourceTree = "<group>"; };
 		D6F7E47313C76DE000A4C875 /* BoxOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxOverlay.png; sourceTree = "<group>"; };
 		D6F7E47F13C7BA0100A4C875 /* b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = b.jpg; sourceTree = "<group>"; };
 		D6F7E48013C7BA0200A4C875 /* c.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = c.jpg; sourceTree = "<group>"; };
@@ -364,9 +313,6 @@
 				D65720C813C61AA90002AA67 /* Main Controller */,
 				D65720C713C61A900002AA67 /* GigaPixel */,
 				D657207313C618890002AA67 /* GridView */,
-				D657207213C6185B0002AA67 /* Reachability2.0 */,
-				D657207113C6183A0002AA67 /* ASIHTTPRequest */,
-				D657207013C618240002AA67 /* TouchJSON */,
 				D657205513C617E80002AA67 /* Supporting Files */,
 			);
 			path = "Pathology-interface";
@@ -408,62 +354,6 @@
 				D60EF9E813CA0A25002627AA /* GigaPixel.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D657207013C618240002AA67 /* TouchJSON */ = {
-			isa = PBXGroup;
-			children = (
-				D65720E213C61D0F0002AA67 /* CDataScanner_Extensions.h */,
-				D65720E313C61D0F0002AA67 /* NSDictionary_JSONExtensions.h */,
-				D65720E413C61D0F0002AA67 /* CDataScanner_Extensions.m */,
-				D65720E513C61D0F0002AA67 /* NSDictionary_JSONExtensions.m */,
-				D65720D813C61D040002AA67 /* CJSONDeserializer.h */,
-				D65720D913C61D040002AA67 /* CJSONScanner.h */,
-				D65720DA13C61D040002AA67 /* CJSONSerializer.h */,
-				D65720DB13C61D040002AA67 /* JSONRepresentation.h */,
-				D65720DC13C61D040002AA67 /* CJSONDeserializer.m */,
-				D65720DD13C61D040002AA67 /* CJSONScanner.m */,
-				D65720DE13C61D040002AA67 /* CJSONSerializer.m */,
-				D65720C913C61B690002AA67 /* CDataScanner.h */,
-				D65720CD13C61B690002AA67 /* CDataScanner.m */,
-			);
-			name = TouchJSON;
-			sourceTree = "<group>";
-		};
-		D657207113C6183A0002AA67 /* ASIHTTPRequest */ = {
-			isa = PBXGroup;
-			children = (
-				D657209513C61A2A0002AA67 /* ASIAuthenticationDialog.m */,
-				D657209613C61A2A0002AA67 /* ASIDataCompressor.m */,
-				D657209713C61A2A0002AA67 /* ASIDataDecompressor.m */,
-				D657209813C61A2A0002AA67 /* ASIDownloadCache.m */,
-				D657209913C61A2A0002AA67 /* ASIFormDataRequest.m */,
-				D657209A13C61A2A0002AA67 /* ASIHTTPRequest.m */,
-				D657209B13C61A2A0002AA67 /* ASIInputStream.m */,
-				D657209C13C61A2A0002AA67 /* ASINetworkQueue.m */,
-				D657208913C61A210002AA67 /* ASIAuthenticationDialog.h */,
-				D657208A13C61A210002AA67 /* ASICacheDelegate.h */,
-				D657208B13C61A210002AA67 /* ASIDataCompressor.h */,
-				D657208C13C61A210002AA67 /* ASIDataDecompressor.h */,
-				D657208D13C61A210002AA67 /* ASIDownloadCache.h */,
-				D657208E13C61A210002AA67 /* ASIFormDataRequest.h */,
-				D657208F13C61A210002AA67 /* ASIHTTPRequest.h */,
-				D657209013C61A210002AA67 /* ASIHTTPRequestConfig.h */,
-				D657209113C61A210002AA67 /* ASIHTTPRequestDelegate.h */,
-				D657209213C61A210002AA67 /* ASIInputStream.h */,
-				D657209313C61A210002AA67 /* ASINetworkQueue.h */,
-				D657209413C61A210002AA67 /* ASIProgressDelegate.h */,
-			);
-			name = ASIHTTPRequest;
-			sourceTree = "<group>";
-		};
-		D657207213C6185B0002AA67 /* Reachability2.0 */ = {
-			isa = PBXGroup;
-			children = (
-				D657207413C618BB0002AA67 /* Reachability.h */,
-				D657207513C618BB0002AA67 /* Reachability.m */,
-			);
-			name = Reachability2.0;
 			sourceTree = "<group>";
 		};
 		D657207313C618890002AA67 /* GridView */ = {
@@ -608,6 +498,7 @@
 				D657210A13C6200A0002AA67 /* PathologyViewController.h */,
 				D657210B13C6200A0002AA67 /* PathologyViewController.m */,
 				D657210C13C6200A0002AA67 /* PathologyViewController.xib */,
+				D6A9152E13CCE7DC00C8BADE /* PathologyPortaitViewController.xib */,
 			);
 			name = Pathology;
 			sourceTree = "<group>";
@@ -627,8 +518,6 @@
 		D6A9150D13CC82D300C8BADE /* TODO */ = {
 			isa = PBXGroup;
 			children = (
-				D657210F13C6204D0002AA67 /* UserId.h */,
-				D657211013C6204D0002AA67 /* UserId.m */,
 			);
 			name = TODO;
 			sourceTree = "<group>";
@@ -719,6 +608,7 @@
 				D60EF9DC13C9F82E002627AA /* checkers.png in Resources */,
 				D60EF9E913CA0A25002627AA /* GigaPixel.plist in Resources */,
 				D69A68FB13CA27F100687493 /* PresoModeViewController.xib in Resources */,
+				D6A9153013CCE7DD00C8BADE /* PathologyPortaitViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,15 +621,6 @@
 			files = (
 				D657205C13C617E80002AA67 /* main.m in Sources */,
 				D657205F13C617E80002AA67 /* Pathology_interfaceAppDelegate.m in Sources */,
-				D657207613C618BB0002AA67 /* Reachability.m in Sources */,
-				D657209D13C61A2A0002AA67 /* ASIAuthenticationDialog.m in Sources */,
-				D657209E13C61A2A0002AA67 /* ASIDataCompressor.m in Sources */,
-				D657209F13C61A2A0002AA67 /* ASIDataDecompressor.m in Sources */,
-				D65720A013C61A2A0002AA67 /* ASIDownloadCache.m in Sources */,
-				D65720A113C61A2A0002AA67 /* ASIFormDataRequest.m in Sources */,
-				D65720A213C61A2A0002AA67 /* ASIHTTPRequest.m in Sources */,
-				D65720A313C61A2A0002AA67 /* ASIInputStream.m in Sources */,
-				D65720A413C61A2A0002AA67 /* ASINetworkQueue.m in Sources */,
 				D65720BC13C61A490002AA67 /* AQGridView.m in Sources */,
 				D65720BD13C61A490002AA67 /* AQGridViewAnimatorItem.m in Sources */,
 				D65720BE13C61A490002AA67 /* AQGridViewCell.m in Sources */,
@@ -750,12 +631,6 @@
 				D65720C313C61A490002AA67 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
 				D65720C413C61A490002AA67 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
 				D65720C513C61A490002AA67 /* UIColor+AQGridView.m in Sources */,
-				D65720D113C61B690002AA67 /* CDataScanner.m in Sources */,
-				D65720DF13C61D040002AA67 /* CJSONDeserializer.m in Sources */,
-				D65720E013C61D040002AA67 /* CJSONScanner.m in Sources */,
-				D65720E113C61D040002AA67 /* CJSONSerializer.m in Sources */,
-				D65720E613C61D0F0002AA67 /* CDataScanner_Extensions.m in Sources */,
-				D65720E713C61D0F0002AA67 /* NSDictionary_JSONExtensions.m in Sources */,
 				D65720EA13C61D900002AA67 /* Section.m in Sources */,
 				D65720F113C61DCF0002AA67 /* Chapter.m in Sources */,
 				D65720F413C61E280002AA67 /* ButtonGroup.m in Sources */,
@@ -764,7 +639,6 @@
 				D657210313C61FC50002AA67 /* SectionsViewController.m in Sources */,
 				D657210813C61FE20002AA67 /* ChaptersViewController.m in Sources */,
 				D657210D13C6200B0002AA67 /* PathologyViewController.m in Sources */,
-				D657211113C6204E0002AA67 /* UserId.m in Sources */,
 				D657211513C6207A0002AA67 /* GigaPixelViewController.m in Sources */,
 				D657211913C6233F0002AA67 /* CellLoading.m in Sources */,
 				D657212113C6330A0002AA67 /* WebViewController.m in Sources */,

@@ -90,9 +90,6 @@
 	UIPopoverController * pop;
 	UIPopoverController * popTrack;
 
-
-	
-
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;

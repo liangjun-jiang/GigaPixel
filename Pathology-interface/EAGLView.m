@@ -194,7 +194,7 @@ extern int maxId;
 	hasOldPoint = FALSE;
 	
 	sliceLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-22, SCREEN_HEIGHT-20, 20, 15)];
-	sliceLabel.backgroundColor = [UIColor blackColor];
+	sliceLabel.backgroundColor = [UIColor clearColor];
 	sliceLabel.textColor = [UIColor whiteColor];
 	sliceLabel.text = [NSString stringWithFormat:@"%d", 1];
 	//[self addSubview:sliceLabel];
@@ -316,8 +316,7 @@ extern int maxId;
 
 -(void)quitApp
 {
-	exit(1);
-    
+  	exit(1);
 }
 
 -(void)followSession
@@ -462,6 +461,7 @@ extern int maxId;
 		return;
 	curSlice++;
 	sliceLabel.text = [NSString stringWithFormat:@"%d", curSlice];
+    NSLog(@"slice #: %d", curSlice);
 	[renderer switchSliceTo:curSlice];
 }
 
@@ -470,6 +470,7 @@ extern int maxId;
 	if(curSlice<=1)
 		return;
 	curSlice--;
+    NSLog(@"slice #: %d", curSlice);
 	sliceLabel.text = [NSString stringWithFormat:@"%d", curSlice];
 	[renderer switchSliceTo:curSlice];
 }

@@ -15,14 +15,10 @@
 
 
 @implementation ChaptersViewController
-@synthesize navBar, gridView, chapters, networkQueue, detailButton, sectionName;
+@synthesize navBar, gridView, chapters, detailButton, sectionName;
 
 - (void)dealloc
 {
-    [networkQueue cancelAllOperations];
-    [networkQueue release];
-    networkQueue = nil;
-    
     [gridView release];
     gridView = nil;
     
@@ -70,7 +66,7 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
-//TODO:
+//TODO: Maybe open a webview to check the online pdf or web or something
 -(IBAction)detail;
 {
     
@@ -109,12 +105,23 @@
 
 -(void)gridView:(AQGridView *)gridView didSelectItemAtIndex:(NSUInteger)index
 {
-    PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:nil bundle:nil] autorelease];
-    vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
     
-    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentModalViewController:vc animated:YES];
+    UIDeviceOrientation deviceOrientation = [UIDevice currentDevice].orientation;
+    if (deviceOrientation == UIInterfaceOrientationLandscapeLeft || deviceOrientation == UIInterfaceOrientationLandscapeRight)
+    {
+       PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:nil bundle:nil] autorelease];
+        vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentModalViewController:vc animated:YES];
+    }
     
+    else 
+    {
+        PathologyViewController *vc = [[[PathologyViewController alloc] initWithNibName:@"PathologyPortaitViewController" bundle:nil] autorelease];
+        vc.chapter =[chapters objectForKey:[[chapters allKeys] objectAtIndex:index]];
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        [self presentModalViewController:vc animated:YES];
+    }
 }
 
 -(CGSize)portraitGridCellSizeForGridView:(AQGridView *)gridView

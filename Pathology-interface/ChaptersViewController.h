@@ -9,17 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "AQGridView.h"
 #import "CellLoading.h"
-#import "ASIHTTPRequest.h"
-#import "ASINetworkQueue.h"
-#import "ASIHTTPRequestDelegate.h"
 
 @class Section;
 
-@interface ChaptersViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource, ASIHTTPRequestDelegate>{
+@interface ChaptersViewController : UIViewController <AQGridViewDelegate, AQGridViewDataSource>{
     IBOutlet AQGridView *gridView;
-    ASIHTTPRequest *getChaptersRequest;
-    ASINetworkQueue *networkQueue;
-    
+        
     NSString *sectionName;
     
     UINavigationBar *navBar;
@@ -35,7 +30,7 @@
 @property (nonatomic, retain) NSString *sectionName;
 @property (copy) NSMutableDictionary *chapters;
 @property (retain) AQGridView *gridView;
-@property (retain) ASINetworkQueue *networkQueue;
+
 
 
 -(IBAction)back;

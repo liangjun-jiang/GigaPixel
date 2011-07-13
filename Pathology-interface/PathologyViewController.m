@@ -18,18 +18,13 @@
 @synthesize otherInfoButtonGroup;
 @synthesize pathologyNameLabel;  
 @synthesize anotherLabel, helpfulLabel; 
-
 @synthesize synoposisView; 
-
 @synthesize largeImage;
-
 @synthesize navBar;
 @synthesize gigaPixelButton;
-
 @synthesize createProjectButton; //TODO: 
 @synthesize noteField;
 @synthesize chapter;
-//@synthesize keywords;
 
 
 -(IBAction)back
@@ -53,8 +48,6 @@
    
     [anotherLabel release];
     [helpfulLabel release];
-    //[keywords release];
-    //keywords = nil;
     
     [super dealloc];
 }
@@ -96,13 +89,14 @@
     return keywordArray;    
 }
 
+// For a moment, we let the keyword point to GigaPixel
 -(void)buttonTapped:(ButtonGroupButton *)inButton
 {
-    //TODO: Have not thought about how to handle keyword yet.
+    GigaPixelViewController *vc = [[GigaPixelViewController alloc] initWithNibName:nil bundle:nil];
+    vc.gigapixelIdentifier = [inButton.titleLabel.text intValue];
     
-    //ChaptersViewController *vc = (ChaptersViewController *)self.parentViewController;
-    //vc.section = inButton.section;
-    [self dismissModalViewControllerAnimated:YES];
+    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentModalViewController:vc animated:YES];
 }
 
 - (void)displayKeywords:(NSMutableArray *)keywordsArray
@@ -125,9 +119,11 @@
 {
     [super viewDidLoad];
     self.navBar.topItem.title = [chapter objectForKey:@"title"];
+    NSLog(@"nav bar title %@", self.navBar.topItem.title);
     gigaPixelButton.enabled = FALSE;
     largeImage.image = [UIImage imageNamed:[chapter objectForKey:@"image"]];
     pathologyNameLabel.text = [chapter objectForKey:@"title"];
+    NSLog(@"name label? %@", pathologyNameLabel);
     synoposisView.text = [chapter objectForKey:@"synoposis"];
     
     gigapixelIdentifier = [[chapter objectForKey:@"gigapixel"] intValue];
@@ -148,12 +144,29 @@
    
 }
 
-
-
-//TODO: able to handle portrait
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) || (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    return YES;
+}
+
+#define PI 3.14
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
+        [[NSBundle mainBundle] loadNibNamed:@"PathologyPortaitViewController" owner:self options:nil];
+        if (toInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+            self.view.transform = CGAffineTransformMakeRotation(PI);
+        }
+        
+    } else if (UIInterfaceOrientationIsLandscape(toInterfaceOrientation)){
+        [[NSBundle mainBundle] loadNibNamed:@"PathologyViewController" owner:self options:nil];
+        if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft) {
+            self.view.transform = CGAffineTransformMakeRotation(PI + PI/2);
+        } else {
+            self.view.transform = CGAffineTransformMakeRotation(PI/2);
+        }
+    }
 }
 
 @end
