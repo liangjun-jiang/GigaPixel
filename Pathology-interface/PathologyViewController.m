@@ -119,11 +119,9 @@
 {
     [super viewDidLoad];
     self.navBar.topItem.title = [chapter objectForKey:@"title"];
-    NSLog(@"nav bar title %@", self.navBar.topItem.title);
     gigaPixelButton.enabled = FALSE;
     largeImage.image = [UIImage imageNamed:[chapter objectForKey:@"image"]];
     pathologyNameLabel.text = [chapter objectForKey:@"title"];
-    NSLog(@"name label? %@", pathologyNameLabel);
     synoposisView.text = [chapter objectForKey:@"synoposis"];
     
     gigapixelIdentifier = [[chapter objectForKey:@"gigapixel"] intValue];
