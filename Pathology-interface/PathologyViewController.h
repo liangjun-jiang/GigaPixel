@@ -31,8 +31,10 @@
     
     UITextField *noteField;
     
-        
-    BOOL isShowingLandscapeView;
+    
+    UITextField *usernameField;
+    
+    
     
 }
 
@@ -50,6 +52,5 @@
 @property (nonatomic, retain) IBOutlet UITextField *noteField;
 
 -(IBAction)back;
--(IBAction)displayGigapixel;
 
 @end

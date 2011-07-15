@@ -11,11 +11,13 @@
 
 @interface GigaPixelViewController : UIViewController {
     NSInteger gigapixelIdentifier;
+    NSString *username;
     UINavigationBar *nav;
     
 }
 
 @property (readwrite) NSInteger gigapixelIdentifier;
+@property (copy) NSString *username;
 @property (nonatomic, retain) IBOutlet UINavigationBar *nav;
 
 -(IBAction)back;

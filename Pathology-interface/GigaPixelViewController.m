@@ -11,6 +11,7 @@
 
 @implementation GigaPixelViewController
 @synthesize gigapixelIdentifier;
+@synthesize username;
 @synthesize nav;
 
 
@@ -47,6 +48,8 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"user:%@", username);
+    
     NSMutableDictionary *gigapixels = [[[NSMutableDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GigaPixel" ofType:@"plist"]] autorelease];
     
     NSMutableDictionary *gigapixel = [[[NSMutableDictionary alloc] init] autorelease];
@@ -70,8 +73,6 @@
         
         [self.view addSubview:glView];
     }
-    
-    
     
 }
 

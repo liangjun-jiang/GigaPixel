@@ -48,7 +48,6 @@
    
     [anotherLabel release];
     [helpfulLabel release];
-    
     [super dealloc];
 }
 
@@ -57,15 +56,43 @@
     [super didReceiveMemoryWarning];
 }
 
+-(IBAction)addUserAction
+{
+    UIAlertView *userNameAlert = [[UIAlertView alloc] initWithTitle:@"Your name" message:@"user name" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    usernameField = [[UITextField alloc] initWithFrame:CGRectMake(12.0, 45.0, 260.0, 25.0)];
+    [usernameField setKeyboardType:UIKeyboardTypeAlphabet];
+    CGAffineTransform myTransform = CGAffineTransformMakeTranslation(0.0, 130.0);
+    [userNameAlert setTransform:myTransform];
+    
+    [usernameField setBackgroundColor:[UIColor whiteColor]];
+    [userNameAlert addSubview:usernameField];
+    [usernameField becomeFirstResponder];
+    [userNameAlert show];
+ }
 
-
--(IBAction)displayGigapixel
+-(void)displayGigapixel
 {
     GigaPixelViewController *vc =[[[GigaPixelViewController alloc] initWithNibName:nil bundle:nil] autorelease];
     vc.gigapixelIdentifier = gigapixelIdentifier;   
+    vc.username = usernameField.text;
+    [usernameField release];
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentModalViewController:vc animated:YES];
+    
+}
 
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1 && usernameField.text !=nil) {
+        //NSLog(@"user name:%@", usernameField.text);
+        [usernameField resignFirstResponder];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+  	[alertView release];
+    [self displayGigapixel];
 }
 
 -(NSMutableArray *)parseKeywords:(NSString *)keywordsString
