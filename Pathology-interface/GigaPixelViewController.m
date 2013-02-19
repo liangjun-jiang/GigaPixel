@@ -67,7 +67,7 @@
          setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
         [[UIApplication sharedApplication] setStatusBarHidden:TRUE animated:NO];
         
-        EAGLView *glView = [[EAGLView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] andImg:theImg andUrl:theUrl andNumSlices:nS];
+        EAGLView *glView = [[EAGLView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame] andImg:theImg andUrl:theUrl andNumSlices:nS withUserName:username];
         
         glView.multipleTouchEnabled = TRUE;
         

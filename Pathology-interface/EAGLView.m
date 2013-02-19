@@ -48,7 +48,7 @@ extern int maxId;
 
 //The EAGL view is stored in the nib file. When it's unarchived it's sent -initWithCoder:
 //- (id)initWithCoder:(NSCoder*)coder
--(id)initWithFrame:(CGRect)frame andImg:(NSString *)img andUrl:(NSString *)url andNumSlices:(int)nS
+-(id)initWithFrame:(CGRect)frame andImg:(NSString *)img andUrl:(NSString *)url andNumSlices:(int)nS withUserName:(NSString *)username
 {    
 	followId = -1;
 	trackId = -1;

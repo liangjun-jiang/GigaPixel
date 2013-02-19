@@ -8,8 +8,8 @@
 
 #import "UserId.h"
 
-#import "ASIHTTPRequest.h"
-#import "ASINetworkQueue.h"
+//#import "ASIHTTPRequest.h"
+//#import "ASINetworkQueue.h"
 
 #define USERKEY @"USERID"
 #define GIGAPIXELKEY @"GIGAPIXELID"

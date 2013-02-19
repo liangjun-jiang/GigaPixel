@@ -7,18 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ASIHTTPRequest.h"
-#import "ASINetworkQueue.h"
-#import "ASIHTTPRequestDelegate.h"
+//#import "ASIHTTPRequest.h"
+//#import "ASINetworkQueue.h"
+//#import "ASIHTTPRequestDelegate.h"
 
 
-@interface UserId : NSObject <ASIHTTPRequestDelegate> {
-    ASINetworkQueue *networkQueue;
+@interface UserId : NSObject  {
+    //ASINetworkQueue *networkQueue;
 }
-@property (retain) ASINetworkQueue *networkQueue;
+//@property (retain) ASINetworkQueue *networkQueue;
 
 - (void)obtainUserIdWithAsyncRequest;
-- (void)idDidLoad:(ASIHTTPRequest *)request;
+//- (void)idDidLoad:(ASIHTTPRequest *)request;
 
 // these functions can be accessed by an ephemeral instance
 - (NSString *)getUserId;	// return the id if we have one persisted

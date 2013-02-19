@@ -75,6 +75,9 @@
 	
 	UITextField* myTextField;
 	
+    
+    NSString *userName;
+    
 	NSString *inputText;
 
 
@@ -94,7 +97,7 @@
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
--(id)initWithFrame:(CGRect)frame andImg:(NSString *)img andUrl:(NSString *)url andNumSlices:(int)nS;
+-(id)initWithFrame:(CGRect)frame andImg:(NSString *)img andUrl:(NSString *)url andNumSlices:(int)nS withUserName:(NSString *)username;
 -(void)showSessions;
 -(void)pollRequest:(id)sender;
 -(void)gridClicked;
